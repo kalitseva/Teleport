@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1360456228159D1900578AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456128159D1900578AFF /* AppDelegate.swift */; };
+		1360456428159D1900578AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456328159D1900578AFF /* SceneDelegate.swift */; };
+		1360456628159D1900578AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456528159D1900578AFF /* ViewController.swift */; };
+		1360456928159D1900578AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1360456728159D1900578AFF /* Main.storyboard */; };
+		1360456B28159D1F00578AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1360456A28159D1F00578AFF /* Assets.xcassets */; };
+		1360456E28159D1F00578AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1360456C28159D1F00578AFF /* LaunchScreen.storyboard */; };
+		1360457928159D2000578AFF /* TeleportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360457828159D2000578AFF /* TeleportTests.swift */; };
+		1360458328159D2000578AFF /* TeleportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360458228159D2000578AFF /* TeleportUITests.swift */; };
+		1360458528159D2000578AFF /* TeleportUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360458428159D2000578AFF /* TeleportUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1360457528159D2000578AFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1360455628159D1900578AFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1360455D28159D1900578AFF;
+			remoteInfo = Teleport;
+		};
+		1360457F28159D2000578AFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1360455628159D1900578AFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1360455D28159D1900578AFF;
+			remoteInfo = Teleport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1360455E28159D1900578AFF /* Teleport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1360456128159D1900578AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1360456328159D1900578AFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1360456528159D1900578AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1360456828159D1900578AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1360456A28159D1F00578AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1360456D28159D1F00578AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1360456F28159D1F00578AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1360457428159D2000578AFF /* TeleportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1360457828159D2000578AFF /* TeleportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportTests.swift; sourceTree = "<group>"; };
+		1360457E28159D2000578AFF /* TeleportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1360458228159D2000578AFF /* TeleportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportUITests.swift; sourceTree = "<group>"; };
+		1360458428159D2000578AFF /* TeleportUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1360455B28159D1900578AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1360457128159D2000578AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1360457B28159D2000578AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1360455528159D1900578AFF = {
+			isa = PBXGroup;
+			children = (
+				1360456028159D1900578AFF /* Teleport */,
+				1360457728159D2000578AFF /* TeleportTests */,
+				1360458128159D2000578AFF /* TeleportUITests */,
+				1360455F28159D1900578AFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1360455F28159D1900578AFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1360455E28159D1900578AFF /* Teleport.app */,
+				1360457428159D2000578AFF /* TeleportTests.xctest */,
+				1360457E28159D2000578AFF /* TeleportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1360456028159D1900578AFF /* Teleport */ = {
+			isa = PBXGroup;
+			children = (
+				1360456128159D1900578AFF /* AppDelegate.swift */,
+				1360456328159D1900578AFF /* SceneDelegate.swift */,
+				1360456528159D1900578AFF /* ViewController.swift */,
+				1360456728159D1900578AFF /* Main.storyboard */,
+				1360456A28159D1F00578AFF /* Assets.xcassets */,
+				1360456C28159D1F00578AFF /* LaunchScreen.storyboard */,
+				1360456F28159D1F00578AFF /* Info.plist */,
+			);
+			path = Teleport;
+			sourceTree = "<group>";
+		};
+		1360457728159D2000578AFF /* TeleportTests */ = {
+			isa = PBXGroup;
+			children = (
+				1360457828159D2000578AFF /* TeleportTests.swift */,
+			);
+			path = TeleportTests;
+			sourceTree = "<group>";
+		};
+		1360458128159D2000578AFF /* TeleportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1360458228159D2000578AFF /* TeleportUITests.swift */,
+				1360458428159D2000578AFF /* TeleportUITestsLaunchTests.swift */,
+			);
+			path = TeleportUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1360455D28159D1900578AFF /* Teleport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1360458828159D2000578AFF /* Build configuration list for PBXNativeTarget "Teleport" */;
+			buildPhases = (
+				1360455A28159D1900578AFF /* Sources */,
+				1360455B28159D1900578AFF /* Frameworks */,
+				1360455C28159D1900578AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teleport;
+			productName = Teleport;
+			productReference = 1360455E28159D1900578AFF /* Teleport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1360457328159D2000578AFF /* TeleportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1360458B28159D2000578AFF /* Build configuration list for PBXNativeTarget "TeleportTests" */;
+			buildPhases = (
+				1360457028159D2000578AFF /* Sources */,
+				1360457128159D2000578AFF /* Frameworks */,
+				1360457228159D2000578AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1360457628159D2000578AFF /* PBXTargetDependency */,
+			);
+			name = TeleportTests;
+			productName = TeleportTests;
+			productReference = 1360457428159D2000578AFF /* TeleportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1360457D28159D2000578AFF /* TeleportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1360458E28159D2000578AFF /* Build configuration list for PBXNativeTarget "TeleportUITests" */;
+			buildPhases = (
+				1360457A28159D2000578AFF /* Sources */,
+				1360457B28159D2000578AFF /* Frameworks */,
+				1360457C28159D2000578AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1360458028159D2000578AFF /* PBXTargetDependency */,
+			);
+			name = TeleportUITests;
+			productName = TeleportUITests;
+			productReference = 1360457E28159D2000578AFF /* TeleportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1360455628159D1900578AFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					1360455D28159D1900578AFF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					1360457328159D2000578AFF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 1360455D28159D1900578AFF;
+					};
+					1360457D28159D2000578AFF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 1360455D28159D1900578AFF;
+					};
+				};
+			};
+			buildConfigurationList = 1360455928159D1900578AFF /* Build configuration list for PBXProject "Teleport" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1360455528159D1900578AFF;
+			productRefGroup = 1360455F28159D1900578AFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1360455D28159D1900578AFF /* Teleport */,
+				1360457328159D2000578AFF /* TeleportTests */,
+				1360457D28159D2000578AFF /* TeleportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1360455C28159D1900578AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1360456E28159D1F00578AFF /* LaunchScreen.storyboard in Resources */,
+				1360456B28159D1F00578AFF /* Assets.xcassets in Resources */,
+				1360456928159D1900578AFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1360457228159D2000578AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1360457C28159D2000578AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1360455A28159D1900578AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1360456628159D1900578AFF /* ViewController.swift in Sources */,
+				1360456228159D1900578AFF /* AppDelegate.swift in Sources */,
+				1360456428159D1900578AFF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1360457028159D2000578AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1360457928159D2000578AFF /* TeleportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1360457A28159D2000578AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1360458528159D2000578AFF /* TeleportUITestsLaunchTests.swift in Sources */,
+				1360458328159D2000578AFF /* TeleportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1360457628159D2000578AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1360455D28159D1900578AFF /* Teleport */;
+			targetProxy = 1360457528159D2000578AFF /* PBXContainerItemProxy */;
+		};
+		1360458028159D2000578AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1360455D28159D1900578AFF /* Teleport */;
+			targetProxy = 1360457F28159D2000578AFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1360456728159D1900578AFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1360456828159D1900578AFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1360456C28159D1F00578AFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1360456D28159D1F00578AFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1360458628159D2000578AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1360458728159D2000578AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1360458928159D2000578AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Teleport/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maya-Kalitseva.Teleport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1360458A28159D2000578AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Teleport/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maya-Kalitseva.Teleport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1360458C28159D2000578AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maya-Kalitseva.TeleportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleport.app/Teleport";
+			};
+			name = Debug;
+		};
+		1360458D28159D2000578AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maya-Kalitseva.TeleportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleport.app/Teleport";
+			};
+			name = Release;
+		};
+		1360458F28159D2000578AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maya-Kalitseva.TeleportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Teleport;
+			};
+			name = Debug;
+		};
+		1360459028159D2000578AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Maya-Kalitseva.TeleportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Teleport;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1360455928159D1900578AFF /* Build configuration list for PBXProject "Teleport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1360458628159D2000578AFF /* Debug */,
+				1360458728159D2000578AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1360458828159D2000578AFF /* Build configuration list for PBXNativeTarget "Teleport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1360458928159D2000578AFF /* Debug */,
+				1360458A28159D2000578AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1360458B28159D2000578AFF /* Build configuration list for PBXNativeTarget "TeleportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1360458C28159D2000578AFF /* Debug */,
+				1360458D28159D2000578AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1360458E28159D2000578AFF /* Build configuration list for PBXNativeTarget "TeleportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1360458F28159D2000578AFF /* Debug */,
+				1360459028159D2000578AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1360455628159D1900578AFF /* Project object */;
+}
