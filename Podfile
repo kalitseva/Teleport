@@ -10,6 +10,7 @@ pod 'RxSwift', '~> 5.1'
 pod 'RxCocoa', '~> 5.1'
 pod 'RxKeyboard', '~> 1.0'
 pod 'RxGesture'
+pod 'RxDataSources'
 pod 'Moya/RxSwift', '~> 14.0'
 pod 'SnapKit'
 
