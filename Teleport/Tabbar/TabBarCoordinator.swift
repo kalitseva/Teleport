@@ -37,13 +37,14 @@ final class SearchCoordinator {
     }
 }
 
-final class CitiesCoordinator {
+final class ContinentsCoordinator {
     
     let service = Service()
     private(set) weak var navigationController: UINavigationController?
     
     func start() -> UINavigationController {
-        let vc = ViewController()
+        let vm = ContinentsViewModel(service: service)
+        let vc = ContinentsViewController(viewModel: vm)
         let navigationController = UINavigationController()
         self.navigationController = navigationController
         navigationController.setViewControllers([vc], animated: false)
@@ -77,7 +78,7 @@ final class TabBarCoordinator {
     let flow = PublishRelay<Flow>()
     let countryCoordinator = CountryCoordinator()
     let searchCoordinator = SearchCoordinator()
-    let citiesCoordinator = CitiesCoordinator()
+    let continentsCoordinator = ContinentsCoordinator()
     let timezonesCoordinator = TimezonesCoordinator()
 
     // MARK: Private properties
@@ -97,7 +98,7 @@ final class TabBarCoordinator {
     // MARK: Private methods
 
     private func setTabControllers(for tabBarController: TabBarController) {
-        tabBarController.viewControllers = [countryCoordinator.start(), searchCoordinator.start(), citiesCoordinator.start(), timezonesCoordinator.start()]
+        tabBarController.viewControllers = [countryCoordinator.start(), searchCoordinator.start(), continentsCoordinator.start(), timezonesCoordinator.start()]
     }
 
 /*

@@ -10,6 +10,7 @@ import Moya
 
 enum Target {
     case allCountries
+    case allContinents
 }
 
 extension Target: TargetType {
@@ -26,12 +27,14 @@ extension Target: TargetType {
         switch self {
         case .allCountries:
             return "countries/"
+        case .allContinents:
+            return "continents/"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .allCountries:
+        case .allCountries, .allContinents:
             return .get
         }
     }
@@ -42,7 +45,7 @@ extension Target: TargetType {
     
     var task: Task {
         switch self {
-        case .allCountries:
+        case .allCountries, .allContinents:
             return .requestPlain
         }
     }

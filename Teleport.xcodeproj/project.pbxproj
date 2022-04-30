@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0A23671B3518D7AB8E5C1F02 /* Pods_Teleport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E3C55E03D21091F5F143D /* Pods_Teleport.framework */; };
+		132EC427281DBC3A002CC1B2 /* ContinentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132EC426281DBC3A002CC1B2 /* ContinentsViewController.swift */; };
+		132EC429281DBC45002CC1B2 /* ContinentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132EC428281DBC45002CC1B2 /* ContinentsViewModel.swift */; };
+		132EC42B281DBC80002CC1B2 /* ContinentsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132EC42A281DBC80002CC1B2 /* ContinentsTableCell.swift */; };
+		132EC42D281DBC91002CC1B2 /* ContinentsTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132EC42C281DBC91002CC1B2 /* ContinentsTableCellViewModel.swift */; };
+		132EC42F281DC0F4002CC1B2 /* ContinentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132EC42E281DC0F4002CC1B2 /* ContinentsResponse.swift */; };
 		1350F2212819C39A005CD992 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2202819C39A005CD992 /* CountriesViewController.swift */; };
 		1350F2252819C70A005CD992 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2242819C70A005CD992 /* Configuration.swift */; };
 		1350F2272819C7A3005CD992 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2262819C7A3005CD992 /* Service.swift */; };
@@ -56,6 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		132EC426281DBC3A002CC1B2 /* ContinentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsViewController.swift; sourceTree = "<group>"; };
+		132EC428281DBC45002CC1B2 /* ContinentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsViewModel.swift; sourceTree = "<group>"; };
+		132EC42A281DBC80002CC1B2 /* ContinentsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsTableCell.swift; sourceTree = "<group>"; };
+		132EC42C281DBC91002CC1B2 /* ContinentsTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsTableCellViewModel.swift; sourceTree = "<group>"; };
+		132EC42E281DC0F4002CC1B2 /* ContinentsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsResponse.swift; sourceTree = "<group>"; };
 		1350F2202819C39A005CD992 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
 		1350F2242819C70A005CD992 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		1350F2262819C7A3005CD992 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -119,6 +129,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132EC424281DBC06002CC1B2 /* Continents */ = {
+			isa = PBXGroup;
+			children = (
+				132EC425281DBC1E002CC1B2 /* TableCells + VM */,
+				132EC426281DBC3A002CC1B2 /* ContinentsViewController.swift */,
+				132EC428281DBC45002CC1B2 /* ContinentsViewModel.swift */,
+			);
+			path = Continents;
+			sourceTree = "<group>";
+		};
+		132EC425281DBC1E002CC1B2 /* TableCells + VM */ = {
+			isa = PBXGroup;
+			children = (
+				132EC42A281DBC80002CC1B2 /* ContinentsTableCell.swift */,
+				132EC42C281DBC91002CC1B2 /* ContinentsTableCellViewModel.swift */,
+			);
+			path = "TableCells + VM";
+			sourceTree = "<group>";
+		};
 		1350F21F2819C385005CD992 /* Countries */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				1350F249281ADED9005CD992 /* CountriesResponses.swift */,
+				132EC42E281DC0F4002CC1B2 /* ContinentsResponse.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -207,6 +237,7 @@
 		1360456028159D1900578AFF /* Teleport */ = {
 			isa = PBXGroup;
 			children = (
+				132EC424281DBC06002CC1B2 /* Continents */,
 				1350F2402819D7B5005CD992 /* Tabbar */,
 				1350F22D2819CAFD005CD992 /* Extentions */,
 				1350F2222819C693005CD992 /* Service */,
@@ -437,15 +468,20 @@
 				1350F2422819D7D6005CD992 /* TabBarController.swift in Sources */,
 				1350F2392819CEAC005CD992 /* TableViewCellModelProtocol.swift in Sources */,
 				1350F2372819CDF6005CD992 /* CountryTableCellViewModel.swift in Sources */,
+				132EC42D281DBC91002CC1B2 /* ContinentsTableCellViewModel.swift in Sources */,
 				1350F2252819C70A005CD992 /* Configuration.swift in Sources */,
 				1350F2292819C7AD005CD992 /* Target.swift in Sources */,
+				132EC427281DBC3A002CC1B2 /* ContinentsViewController.swift in Sources */,
 				1350F23F2819D18B005CD992 /* CollectionViewCellModelProtocol.swift in Sources */,
+				132EC42B281DBC80002CC1B2 /* ContinentsTableCell.swift in Sources */,
 				1350F24A281ADED9005CD992 /* CountriesResponses.swift in Sources */,
 				1360456228159D1900578AFF /* AppDelegate.swift in Sources */,
 				1350F2332819CB33005CD992 /* UITableView+Reusable.swift in Sources */,
+				132EC429281DBC45002CC1B2 /* ContinentsViewModel.swift in Sources */,
 				1360456428159D1900578AFF /* SceneDelegate.swift in Sources */,
 				1350F22F2819CB25005CD992 /* UITableViewCell+Reusable.swift in Sources */,
 				1350F2442819D80A005CD992 /* CustomTabBarView.swift in Sources */,
+				132EC42F281DC0F4002CC1B2 /* ContinentsResponse.swift in Sources */,
 				1350F23D2819D13F005CD992 /* CountriesViewModel.swift in Sources */,
 				1350F2322819CB33005CD992 /* UITableView+ViewMovel.swift in Sources */,
 				1350F22C2819CAA0005CD992 /* CountryTableCell.swift in Sources */,
