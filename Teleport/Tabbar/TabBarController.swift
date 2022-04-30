@@ -21,7 +21,8 @@ final class TabBarController: UITabBarController {
 
     lazy var customTabBarView: CustomTabBarView = {
         let iv = CustomTabBarView(menuItems: tabItems)
-        iv.contentMode = .scaleAspectFill
+        iv.contentMode = .scaleAspectFit
+        iv.backgroundColor = .clear
         return iv
     }()
 
@@ -33,15 +34,9 @@ final class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCustomTabBar()
         bindCustomTabbarView()
         setupCustomSafeAreaInsets()
-    }
-
-    // MARK: - Public Methods
-
-    func setTabbarHidden(_ isHidden: Bool) {
-        customTabBarView.isHidden = isHidden
+        setupCustomTabBar()
     }
 
     // MARK: - Private Methods
@@ -51,7 +46,8 @@ final class TabBarController: UITabBarController {
     }
 
     private func setupCustomTabBar() {
-        tabBar.isHidden = true
+        tabBar.isHidden = false
+        tabBar.backgroundColor = .white
         view.addSubview(customTabBarView)
 
         customTabBarView.snp.makeConstraints { make in

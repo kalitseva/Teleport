@@ -9,27 +9,6 @@ import Foundation
 import Moya
 import RxSwift
 
-struct CountryRoot: Decodable, Equatable {
-    let links: CountryMiddle
-    
-    enum CodingKeys: String, CodingKey {
-        case links = "_links"
-    }
-}
-
-struct CountryMiddle: Decodable, Equatable {
-    let countryItems: [CountriesResponse]
-    
-    enum CodingKeys: String, CodingKey {
-        case countryItems = "country:items"
-    }
-}
-
-struct CountriesResponse: Decodable, Equatable {
-    let href: String
-    let name: String
-}
-
 protocol ServiceProtocol {
     func allCountries() -> Single<CountryRoot>
 }
@@ -37,7 +16,6 @@ protocol ServiceProtocol {
 final class Service: ServiceProtocol {
     
     // MARK: - Private Properties
-    
     
     private lazy var plugins: [NetworkLoggerPlugin] = {
         return [NetworkLoggerPlugin(configuration: .init( logOptions: .verbose))]

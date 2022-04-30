@@ -27,8 +27,9 @@ final class CustomTabBarView: UIView {
     // MARK: - Private properties
     
     private var buttons: [UIButton] = []
+    private let invisibleHeight: CGFloat = 38
+    private var shapeLayer: CALayer?
     private var activeItem: Int = 0
-    
     
     // MARK: - Initializers
     
@@ -46,12 +47,19 @@ final class CustomTabBarView: UIView {
     
     private func setupTabItems(menuItems: [TabItem]) {
         for item in 0 ..< menuItems.count {
+            let centerXAnchor = (UIScreen.main.bounds.width / 4) * (CGFloat(item) + 1) - (UIScreen.main.bounds.width / 9)
             let tabBarItem = self.createTabItem(item: menuItems[item])
             tabBarItem.tag = item
             tabBarItem.translatesAutoresizingMaskIntoConstraints = false
             tabBarItem.clipsToBounds = true
             self.addSubview(tabBarItem)
             self.buttons.append(tabBarItem)
+
+            tabBarItem.snp.makeConstraints { make in
+                make.size.equalTo(40)
+                make.centerX.equalTo(centerXAnchor)
+                make.centerY.equalTo(snp.bottom).offset(-35)
+            }
         }
     }
     
@@ -62,7 +70,7 @@ final class CustomTabBarView: UIView {
         tabBarButton.setImage(item.iconForActive, for: .selected)
         tabBarButton.contentHorizontalAlignment = .fill
         tabBarButton.contentVerticalAlignment = .fill
-        tabBarButton.contentMode = .scaleToFill
+        tabBarButton.contentMode = .scaleAspectFit
         tabBarButton.translatesAutoresizingMaskIntoConstraints = false
         tabBarButton.clipsToBounds = true
         bindButton(tabBarButton)
@@ -80,9 +88,9 @@ final class CustomTabBarView: UIView {
             .do(onNext: { [weak self] in
                 self?.switchTab(to: $0.rawValue)
             })
-                .bind(to: flow)
-                .disposed(by: bag)
-                }
+            .bind(to: flow)
+            .disposed(by: bag)
+    }
     
     private func switchTab(to: Int) {
         self.activateTab(tab: to)

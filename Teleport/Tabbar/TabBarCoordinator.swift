@@ -23,6 +23,48 @@ final class CountryCoordinator {
     }
 }
 
+final class SearchCoordinator {
+    
+    let service = Service()
+    private(set) weak var navigationController: UINavigationController?
+    
+    func start() -> UINavigationController {
+        let vc = ViewController()
+        let navigationController = UINavigationController()
+        self.navigationController = navigationController
+        navigationController.setViewControllers([vc], animated: false)
+        return navigationController
+    }
+}
+
+final class CitiesCoordinator {
+    
+    let service = Service()
+    private(set) weak var navigationController: UINavigationController?
+    
+    func start() -> UINavigationController {
+        let vc = ViewController()
+        let navigationController = UINavigationController()
+        self.navigationController = navigationController
+        navigationController.setViewControllers([vc], animated: false)
+        return navigationController
+    }
+}
+
+final class TimezonesCoordinator {
+    
+    let service = Service()
+    private(set) weak var navigationController: UINavigationController?
+    
+    func start() -> UINavigationController {
+        let vc = ViewController()
+        let navigationController = UINavigationController()
+        self.navigationController = navigationController
+        navigationController.setViewControllers([vc], animated: false)
+        return navigationController
+    }
+}
+
 final class TabBarCoordinator {
 
     enum Flow {
@@ -34,6 +76,9 @@ final class TabBarCoordinator {
     let bag = DisposeBag()
     let flow = PublishRelay<Flow>()
     let countryCoordinator = CountryCoordinator()
+    let searchCoordinator = SearchCoordinator()
+    let citiesCoordinator = CitiesCoordinator()
+    let timezonesCoordinator = TimezonesCoordinator()
 
     // MARK: Private properties
 
@@ -44,8 +89,7 @@ final class TabBarCoordinator {
     @discardableResult
     func start() -> UITabBarController {
         setTabControllers(for: tabBarController)
-        coordinatorsPopToRoot()
-      //  tabBarController.selectedIndex = 0
+     //   coordinatorsPopToRoot() THINK ABOUT USAGE LATER
         return tabBarController
     }
 
@@ -53,10 +97,11 @@ final class TabBarCoordinator {
     // MARK: Private methods
 
     private func setTabControllers(for tabBarController: TabBarController) {
-        tabBarController.viewControllers = [countryCoordinator.start()]
+        tabBarController.viewControllers = [countryCoordinator.start(), searchCoordinator.start(), citiesCoordinator.start(), timezonesCoordinator.start()]
     }
 
-
+/*
+ THINK ABOUT USAGE LATER
     private func coordinatorsPopToRoot() {
         tabBarController
             .customTabBarView
@@ -64,16 +109,20 @@ final class TabBarCoordinator {
             .bind { [weak self] flow in
                 guard let self = self else { return }
                 switch flow {
-                case .search, .cities, .timezones:
-                    return
                 case .countries:
                     let countryVM = CountriesViewModel(service: self.countryCoordinator.service)
                     let countryVC = CountriesViewController(viewModel: countryVM)
-                    self.tabBarController.present(countryVC, animated: true)
-                    
+                  //  self.tabBarController.present(countryVC, animated: true)
+                        //self.countryCoordinator.start()
+                case .search, .cities, .timezones:
+                    let vc = ViewController()
+                  //  self.tabBarController.present(vc, animated: true)
+                    //self.searchCoordinator.start()
+                    print("tap")
                 }
             }
             .disposed(by: tabBarController.customTabBarView.bag)
     }
+ */
 }
 

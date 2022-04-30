@@ -13,7 +13,9 @@ final class CountryTableCell: UITableViewCell {
     
     private let countryName: UILabel = {
         let lbl = UILabel()
-        lbl.textColor = UIColor.black
+        lbl.font = UIFont.systemFont(ofSize: 15)
+        lbl.textColor = UIColor.darkGray
+        lbl.numberOfLines = 0
         return lbl
     }()
     
@@ -44,11 +46,10 @@ final class CountryTableCell: UITableViewCell {
     
     private func setupLayout() {
         addSubview(countryName)
-        
         countryName.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(30)
-            make.leading.trailing.equalToSuperview().inset(5)
-            make.bottom.equalToSuperview().inset(-30)
+            make.top.equalToSuperview().inset(12)
+            make.leading.trailing.equalToSuperview().inset(15)
+            make.bottom.equalToSuperview().inset(12)
         }
     }
 }

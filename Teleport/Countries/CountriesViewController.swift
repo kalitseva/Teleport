@@ -20,14 +20,16 @@ final class CountriesViewController: UIViewController {
     
     private let countriesLabel: UILabel = {
         let lbl = UILabel()
-        lbl.textColor = UIColor.blue
+        lbl.textColor = UIColor.systemBlue.withAlphaComponent(0.6)
+        lbl.font = UIFont.boldSystemFont(ofSize: 17)
+        lbl.numberOfLines = 0
         return lbl
     }()
     
     private let countriesTableView: UITableView = {
         let tbv = UITableView()
-        tbv.backgroundColor = .clear
-        tbv.separatorStyle = .none
+        tbv.backgroundColor = UIColor.systemBrown.withAlphaComponent(0.1)
+        tbv.separatorStyle = .singleLine
         tbv.tableFooterView = UIView()
         tbv.rowHeight = UITableView.automaticDimension
         tbv.delaysContentTouches = false

@@ -26,6 +26,7 @@
 		1350F2442819D80A005CD992 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2432819D80A005CD992 /* CustomTabBarView.swift */; };
 		1350F2462819D92E005CD992 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2452819D92E005CD992 /* TabItem.swift */; };
 		1350F2482819DCBB005CD992 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2472819DCBB005CD992 /* TabBarCoordinator.swift */; };
+		1350F24A281ADED9005CD992 /* CountriesResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F249281ADED9005CD992 /* CountriesResponses.swift */; };
 		1360456228159D1900578AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456128159D1900578AFF /* AppDelegate.swift */; };
 		1360456428159D1900578AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456328159D1900578AFF /* SceneDelegate.swift */; };
 		1360456628159D1900578AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456528159D1900578AFF /* ViewController.swift */; };
@@ -73,6 +74,7 @@
 		1350F2432819D80A005CD992 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		1350F2452819D92E005CD992 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		1350F2472819DCBB005CD992 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		1350F249281ADED9005CD992 /* CountriesResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesResponses.swift; sourceTree = "<group>"; };
 		1360455E28159D1900578AFF /* Teleport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1360456128159D1900578AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1360456328159D1900578AFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		1350F2222819C693005CD992 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1350F2232819C699005CD992 /* Structs */,
 				1350F2242819C70A005CD992 /* Configuration.swift */,
 				1350F2262819C7A3005CD992 /* Service.swift */,
 				1350F2282819C7AD005CD992 /* Target.swift */,
@@ -137,11 +140,12 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		1350F2232819C699005CD992 /* Target */ = {
+		1350F2232819C699005CD992 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				1350F249281ADED9005CD992 /* CountriesResponses.swift */,
 			);
-			path = Target;
+			path = Structs;
 			sourceTree = "<group>";
 		};
 		1350F22A2819CA86005CD992 /* TableCells + VMs */ = {
@@ -205,7 +209,6 @@
 			children = (
 				1350F2402819D7B5005CD992 /* Tabbar */,
 				1350F22D2819CAFD005CD992 /* Extentions */,
-				1350F2232819C699005CD992 /* Target */,
 				1350F2222819C693005CD992 /* Service */,
 				1350F21F2819C385005CD992 /* Countries */,
 				1360456128159D1900578AFF /* AppDelegate.swift */,
@@ -437,6 +440,7 @@
 				1350F2252819C70A005CD992 /* Configuration.swift in Sources */,
 				1350F2292819C7AD005CD992 /* Target.swift in Sources */,
 				1350F23F2819D18B005CD992 /* CollectionViewCellModelProtocol.swift in Sources */,
+				1350F24A281ADED9005CD992 /* CountriesResponses.swift in Sources */,
 				1360456228159D1900578AFF /* AppDelegate.swift in Sources */,
 				1350F2332819CB33005CD992 /* UITableView+Reusable.swift in Sources */,
 				1360456428159D1900578AFF /* SceneDelegate.swift in Sources */,

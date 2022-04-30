@@ -12,9 +12,13 @@ import SwiftUI
 
 final class CountriesViewModel {
     
+    // MARK: Public Properties
+    
     private(set) var dataItems = PublishRelay<[AnyTableViewCellModelProtocol]>()
     let bag = DisposeBag()
     
+    // MARK: Private Properties
+
     private let service: Service
     
     // MARK: - Initializers
@@ -22,7 +26,9 @@ final class CountriesViewModel {
     init(service: Service) {
         self.service = service
     }
-    
+
+    // MARK: Public Methods
+
     func getCountriesList() {
         service
             .allCountries()
@@ -30,10 +36,10 @@ final class CountriesViewModel {
                 guard let self = self else { return }
                 switch event {
                 case .success(let response):
-                    var items: [AnyTableViewCellModelProtocol] = []
+                    // Parse into cell ViewModel data from response
                     let data = response.links.countryItems.map { CountryTableCellViewModel(countryInfo: $0 )}
+                    // add to dataItems of ViewModel data from response to reload cells with proper information
                     self.dataItems.accept(data)
-                    
                 case .error(let error):
                     print(error)
                 }
