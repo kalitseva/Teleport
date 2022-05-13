@@ -6,6 +6,7 @@
 //
 
 import RxSwift
+import RxRelay
 
 final class ContinentCountryViewController: UIViewController {
     
@@ -16,14 +17,6 @@ final class ContinentCountryViewController: UIViewController {
     // MARK: Private Properties
     
     private let viewModel: ContinentCountryViewModel
-
-    private let continentCountryName: UILabel = {
-        let lbl = UILabel()
-        lbl.textColor = UIColor.systemBlue.withAlphaComponent(0.6)
-        lbl.font = UIFont.boldSystemFont(ofSize: 17)
-        lbl.numberOfLines = 0
-        return lbl
-    }()
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -52,15 +45,13 @@ final class ContinentCountryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
-        configure()
+        bindUI()
         setupLayout()
-        view.backgroundColor = UIColor.white
     }
 
     // MARK: - Public Method
     
-    func bind() {
+    func bindUI() {
         viewModel
             .collectionDataItems
             .bind(to: collectionView.rx.items) { collectionView, row, data in
@@ -71,25 +62,15 @@ final class ContinentCountryViewController: UIViewController {
             }
             .disposed(by: bag)
     }
-    
-    func configure() {
-        continentCountryName.text = "Countries" // of \(name of selected coninent)
-    }
-    
+
     private func setupLayout() {
-        view.addSubview(continentCountryName)
+        view.backgroundColor = UIColor.white
         view.addSubview(collectionView)
-        
-        continentCountryName.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(30)
-            make.centerX.equalToSuperview()
-            make.bottom.equalTo(collectionView.snp.top).inset(-15)
-        }
-        
+
         collectionView.snp.makeConstraints { make in
-            make.top.equalTo(continentCountryName.snp.bottom).inset(15)
+            make.top.equalToSuperview().inset(15)
             make.leading.trailing.equalToSuperview()
-            make.bottom.equalToSuperview().inset(-15)
+            make.bottom.equalToSuperview().inset(30)
         }
     }
 }

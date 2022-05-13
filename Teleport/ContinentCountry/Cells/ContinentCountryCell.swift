@@ -13,7 +13,7 @@ final class ContinentCountryCell: UICollectionViewCell {
     
     private let continentCountryName: UILabel = {
         let lbl = UILabel()
-        lbl.font = UIFont.systemFont(ofSize: 15)
+        lbl.font = UIFont.systemFont(ofSize: 14)
         lbl.textColor = UIColor.darkGray
         lbl.numberOfLines = 0
         return lbl
@@ -24,6 +24,7 @@ final class ContinentCountryCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
+        setupCellUI()
     }
 
     required init?(coder: NSCoder) {
@@ -37,14 +38,19 @@ final class ContinentCountryCell: UICollectionViewCell {
     }
 
     // MARK: Private Methods
+    
+    private func setupCellUI() {
+        clipsToBounds = true
+        layer.cornerRadius = 10
+        layer.borderColor = UIColor.systemBrown.withAlphaComponent(0.3).cgColor
+        layer.borderWidth = 3
+    }
 
     private func setupLayout() {
         addSubview(continentCountryName)
         
         continentCountryName.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(15)
-            make.leading.trailing.equalToSuperview().inset(20)
-            make.bottom.equalToSuperview().inset(-15)
+            make.centerY.centerX.equalToSuperview()
         }
     }
     

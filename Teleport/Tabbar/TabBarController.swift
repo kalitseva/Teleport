@@ -16,13 +16,13 @@ final class TabBarController: UITabBarController {
 
     // MARK: - Private properties
 
-    private let customTabbarHeight: CGFloat = 35
+    private let customTabbarHeight: CGFloat = 55
     private let tabItems: [TabItem] = [.countries, .search, .cities, .timezones]
 
     lazy var customTabBarView: CustomTabBarView = {
         let iv = CustomTabBarView(menuItems: tabItems)
         iv.contentMode = .scaleAspectFit
-        iv.backgroundColor = .clear
+        iv.backgroundColor = .white
         return iv
     }()
 
@@ -35,23 +35,18 @@ final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindCustomTabbarView()
-        setupCustomSafeAreaInsets()
         setupCustomTabBar()
     }
 
     // MARK: - Private Methods
 
-    private func setupCustomSafeAreaInsets() {
-        additionalSafeAreaInsets.bottom = customTabbarHeight
-    }
-
     private func setupCustomTabBar() {
         tabBar.isHidden = false
-        tabBar.backgroundColor = .white
         view.addSubview(customTabBarView)
 
         customTabBarView.snp.makeConstraints { make in
-            make.leading.trailing.bottom.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalToSuperview()
             make.height.equalTo(customTabbarHeight)
         }
         selectedIndex = 0

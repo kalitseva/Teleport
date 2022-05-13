@@ -14,7 +14,7 @@ final class ContinentsViewController: UIViewController {
     
     // MARK: Public Properies
     
-    lazy var onContinentTap = continentsTableView.rx.modelSelected(ContinentsTableCellViewModel.self).map { $0.continentName } // отслеживание выделения ячейки коллекции, срабатывает
+    lazy var onContinentTap = continentsTableView.rx.modelSelected(ContinentsTableCellViewModel.self).map { $0.continentName } // отслеживание выделения ячейки коллекции
     let bag = DisposeBag()
     
     // MARK: Private Properies
@@ -33,7 +33,6 @@ final class ContinentsViewController: UIViewController {
         tbv.separatorStyle = .singleLine
         tbv.tableFooterView = UIView()
         tbv.rowHeight = UITableView.automaticDimension
-     //   tbv.delaysContentTouches = false
         tbv.keyboardDismissMode = .onDrag
         tbv.registerCells(
             withModels:
