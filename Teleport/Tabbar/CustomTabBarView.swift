@@ -45,7 +45,7 @@ final class CustomTabBarView: UIView {
     
     private func setupTabItems(menuItems: [TabItem]) {
         for item in 0 ..< menuItems.count {
-            let centerXAnchor = (UIScreen.main.bounds.width / 4) * (CGFloat(item) + 1) - (UIScreen.main.bounds.width / 9)
+            let centerXAnchor = (UIScreen.main.bounds.width / 3) * (CGFloat(item) + 1) - (UIScreen.main.bounds.width / 6)
             let tabBarItem = self.createTabItem(item: menuItems[item])
             tabBarItem.tag = item
             tabBarItem.translatesAutoresizingMaskIntoConstraints = false
@@ -68,7 +68,7 @@ final class CustomTabBarView: UIView {
         tabBarButton.setImage(item.iconForActive, for: .selected)
         tabBarButton.contentHorizontalAlignment = .fill
         tabBarButton.contentVerticalAlignment = .fill
-        tabBarButton.contentMode = .scaleAspectFit
+        tabBarButton.contentMode = .scaleAspectFill
         tabBarButton.translatesAutoresizingMaskIntoConstraints = false
         bindButton(tabBarButton)
         return tabBarButton

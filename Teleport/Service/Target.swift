@@ -9,7 +9,6 @@ import Foundation
 import Moya
 
 enum Target {
-    case allCountries
     case allContinents
     case continentsCountries(String)
     case allUrbanAreas
@@ -27,8 +26,6 @@ extension Target: TargetType {
     
     var path: String {
         switch self {
-        case .allCountries:
-            return "countries/"
         case .allContinents:
             return "continents/"
         case .continentsCountries(let id):
@@ -40,7 +37,7 @@ extension Target: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .allCountries, .allContinents, .continentsCountries, .allUrbanAreas:
+        case .allContinents, .continentsCountries, .allUrbanAreas:
             return .get
         }
     }
@@ -51,7 +48,7 @@ extension Target: TargetType {
     
     var task: Task {
         switch self {
-        case .allCountries, .allContinents, .continentsCountries, .allUrbanAreas:
+        case .allContinents, .continentsCountries, .allUrbanAreas:
             return .requestPlain
         }
     }
