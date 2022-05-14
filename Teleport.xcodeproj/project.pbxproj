@@ -47,10 +47,15 @@
 		138A3D0328268B4800996FC4 /* ContinentCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A3D0228268B4800996FC4 /* ContinentCountryCell.swift */; };
 		138A3D0528268B6000996FC4 /* ContinentCountryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A3D0428268B6000996FC4 /* ContinentCountryCellViewModel.swift */; };
 		138A3D092826927600996FC4 /* ContinentCountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A3D082826927600996FC4 /* ContinentCountryResponse.swift */; };
+		1391D8B4282E8F4700E1679E /* UrbanAreasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8B3282E8F4700E1679E /* UrbanAreasViewController.swift */; };
+		1391D8B6282E8F5500E1679E /* UrbanAreasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8B5282E8F5500E1679E /* UrbanAreasViewModel.swift */; };
+		1391D8B9282E8F6A00E1679E /* UrbanAreasTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8B8282E8F6A00E1679E /* UrbanAreasTableCell.swift */; };
+		1391D8BB282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8BA282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift */; };
+		1391D8BD282E900D00E1679E /* TimezonesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8BC282E900D00E1679E /* TimezonesResponse.swift */; };
 		13BCE220282BB33E004D7067 /* CountryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BCE21F282BB33E004D7067 /* CountryCoordinator.swift */; };
 		13BCE222282BB360004D7067 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BCE221282BB360004D7067 /* SearchCoordinator.swift */; };
 		13BCE226282BB3BF004D7067 /* ContinentsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BCE225282BB3BE004D7067 /* ContinentsCoordinator.swift */; };
-		13BCE228282BB3E1004D7067 /* TimezonesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BCE227282BB3E1004D7067 /* TimezonesCoordinator.swift */; };
+		13BCE228282BB3E1004D7067 /* UrbanAreasCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BCE227282BB3E1004D7067 /* UrbanAreasCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,10 +119,15 @@
 		138A3D0228268B4800996FC4 /* ContinentCountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentCountryCell.swift; sourceTree = "<group>"; };
 		138A3D0428268B6000996FC4 /* ContinentCountryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentCountryCellViewModel.swift; sourceTree = "<group>"; };
 		138A3D082826927600996FC4 /* ContinentCountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentCountryResponse.swift; sourceTree = "<group>"; };
+		1391D8B3282E8F4700E1679E /* UrbanAreasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasViewController.swift; sourceTree = "<group>"; };
+		1391D8B5282E8F5500E1679E /* UrbanAreasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasViewModel.swift; sourceTree = "<group>"; };
+		1391D8B8282E8F6A00E1679E /* UrbanAreasTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasTableCell.swift; sourceTree = "<group>"; };
+		1391D8BA282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasTableCellViewModel.swift; sourceTree = "<group>"; };
+		1391D8BC282E900D00E1679E /* TimezonesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezonesResponse.swift; sourceTree = "<group>"; };
 		13BCE21F282BB33E004D7067 /* CountryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCoordinator.swift; sourceTree = "<group>"; };
 		13BCE221282BB360004D7067 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		13BCE225282BB3BE004D7067 /* ContinentsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsCoordinator.swift; sourceTree = "<group>"; };
-		13BCE227282BB3E1004D7067 /* TimezonesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezonesCoordinator.swift; sourceTree = "<group>"; };
+		13BCE227282BB3E1004D7067 /* UrbanAreasCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasCoordinator.swift; sourceTree = "<group>"; };
 		14C928DC145C83E4DFD76D24 /* Pods-Teleport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.debug.xcconfig"; path = "Target Support Files/Pods-Teleport/Pods-Teleport.debug.xcconfig"; sourceTree = "<group>"; };
 		9FACDC89459FDD421551DC09 /* Pods-Teleport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.release.xcconfig"; path = "Target Support Files/Pods-Teleport/Pods-Teleport.release.xcconfig"; sourceTree = "<group>"; };
 		F23E3C55E03D21091F5F143D /* Pods_Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +162,7 @@
 		132EC424281DBC06002CC1B2 /* Continents */ = {
 			isa = PBXGroup;
 			children = (
+				13BCE225282BB3BE004D7067 /* ContinentsCoordinator.swift */,
 				132EC425281DBC1E002CC1B2 /* TableCells + VM */,
 				132EC426281DBC3A002CC1B2 /* ContinentsViewController.swift */,
 				132EC428281DBC45002CC1B2 /* ContinentsViewModel.swift */,
@@ -171,6 +182,7 @@
 		1350F21F2819C385005CD992 /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				13BCE21F282BB33E004D7067 /* CountryCoordinator.swift */,
 				1350F22A2819CA86005CD992 /* TableCells + VMs */,
 				1350F2202819C39A005CD992 /* CountriesViewController.swift */,
 				1350F23C2819D13F005CD992 /* CountriesViewModel.swift */,
@@ -195,6 +207,7 @@
 				1350F249281ADED9005CD992 /* CountriesResponses.swift */,
 				132EC42E281DC0F4002CC1B2 /* ContinentsResponse.swift */,
 				138A3D082826927600996FC4 /* ContinentCountryResponse.swift */,
+				1391D8BC282E900D00E1679E /* TimezonesResponse.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -244,13 +257,11 @@
 		1360456028159D1900578AFF /* Teleport */ = {
 			isa = PBXGroup;
 			children = (
+				1391D8B2282E8F0A00E1679E /* Moduls */,
 				13BCE21E282BB329004D7067 /* Coordinators */,
-				138A3CFC28268AC500996FC4 /* ContinentCountry */,
 				138A3CE9282689F600996FC4 /* Extensions */,
-				132EC424281DBC06002CC1B2 /* Continents */,
 				1350F2402819D7B5005CD992 /* Tabbar */,
 				1350F2222819C693005CD992 /* Service */,
-				1350F21F2819C385005CD992 /* Countries */,
 				1360456128159D1900578AFF /* AppDelegate.swift */,
 				1360456528159D1900578AFF /* ViewController.swift */,
 				1360456728159D1900578AFF /* Main.storyboard */,
@@ -313,13 +324,41 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		1391D8B0282E8EEE00E1679E /* UrbanAreas */ = {
+			isa = PBXGroup;
+			children = (
+				1391D8B7282E8F5C00E1679E /* Cells */,
+				13BCE227282BB3E1004D7067 /* UrbanAreasCoordinator.swift */,
+				1391D8B3282E8F4700E1679E /* UrbanAreasViewController.swift */,
+				1391D8B5282E8F5500E1679E /* UrbanAreasViewModel.swift */,
+			);
+			path = UrbanAreas;
+			sourceTree = "<group>";
+		};
+		1391D8B2282E8F0A00E1679E /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				1350F21F2819C385005CD992 /* Countries */,
+				132EC424281DBC06002CC1B2 /* Continents */,
+				138A3CFC28268AC500996FC4 /* ContinentCountry */,
+				1391D8B0282E8EEE00E1679E /* UrbanAreas */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		1391D8B7282E8F5C00E1679E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1391D8B8282E8F6A00E1679E /* UrbanAreasTableCell.swift */,
+				1391D8BA282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		13BCE21E282BB329004D7067 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				13BCE21F282BB33E004D7067 /* CountryCoordinator.swift */,
-				13BCE225282BB3BE004D7067 /* ContinentsCoordinator.swift */,
 				13BCE221282BB360004D7067 /* SearchCoordinator.swift */,
-				13BCE227282BB3E1004D7067 /* TimezonesCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -533,20 +572,25 @@
 				138A3CF528268A4500996FC4 /* AnyCellViewModelProtocol.swift in Sources */,
 				13BCE226282BB3BF004D7067 /* ContinentsCoordinator.swift in Sources */,
 				138A3CED28268A2B00996FC4 /* UITableViewCell+Reusable.swift in Sources */,
+				1391D8B9282E8F6A00E1679E /* UrbanAreasTableCell.swift in Sources */,
 				138A3CFB28268A6300996FC4 /* TableViewCellModelProtocol.swift in Sources */,
 				1350F24A281ADED9005CD992 /* CountriesResponses.swift in Sources */,
 				1360456228159D1900578AFF /* AppDelegate.swift in Sources */,
 				132EC429281DBC45002CC1B2 /* ContinentsViewModel.swift in Sources */,
 				1350F2442819D80A005CD992 /* CustomTabBarView.swift in Sources */,
+				1391D8BB282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift in Sources */,
+				1391D8B6282E8F5500E1679E /* UrbanAreasViewModel.swift in Sources */,
 				138A3D0028268B2900996FC4 /* ContinentCountryViewModel.swift in Sources */,
 				132EC42F281DC0F4002CC1B2 /* ContinentsResponse.swift in Sources */,
 				1350F23D2819D13F005CD992 /* CountriesViewModel.swift in Sources */,
 				138A3CFE28268B0A00996FC4 /* ContinentCountryViewController.swift in Sources */,
 				138A3CF928268A5A00996FC4 /* Reusable.swift in Sources */,
 				138A3D0328268B4800996FC4 /* ContinentCountryCell.swift in Sources */,
+				1391D8BD282E900D00E1679E /* TimezonesResponse.swift in Sources */,
 				1350F22C2819CAA0005CD992 /* CountryTableCell.swift in Sources */,
+				1391D8B4282E8F4700E1679E /* UrbanAreasViewController.swift in Sources */,
 				1350F2482819DCBB005CD992 /* TabBarCoordinator.swift in Sources */,
-				13BCE228282BB3E1004D7067 /* TimezonesCoordinator.swift in Sources */,
+				13BCE228282BB3E1004D7067 /* UrbanAreasCoordinator.swift in Sources */,
 				138A3CEF28268A2B00996FC4 /* UITableView+ViewMovel.swift in Sources */,
 				1350F2212819C39A005CD992 /* CountriesViewController.swift in Sources */,
 				138A3D0528268B6000996FC4 /* ContinentCountryCellViewModel.swift in Sources */,

@@ -21,7 +21,7 @@ final class TabBarCoordinator {
     let countryCoordinator = CountryCoordinator()
     let searchCoordinator = SearchCoordinator()
     let continentsCoordinator = ContinentsCoordinator()
-    let timezonesCoordinator = TimezonesCoordinator()
+    let timezonesCoordinator = UrbanAreasCoordinator()
 
     // MARK: Private properties
 

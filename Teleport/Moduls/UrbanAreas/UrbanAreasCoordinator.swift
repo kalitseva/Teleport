@@ -8,7 +8,7 @@
 import RxSwift
 import RxCocoa
 
-final class TimezonesCoordinator {
+final class UrbanAreasCoordinator {
     
     let service = Service()
     private weak var navigationController: UINavigationController?

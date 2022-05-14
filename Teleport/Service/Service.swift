@@ -13,6 +13,7 @@ protocol ServiceProtocol {
     func allCountries() -> Single<CountryRoot>
     func allContinents() -> Single<ContinentRoot>
     func continentsCountries(id: String) -> Single<ContinentCountryRoot>
+    func allUrbanAreas() -> Single<UrbanAreasRoot>
 }
 
 final class Service: ServiceProtocol {
@@ -46,5 +47,10 @@ final class Service: ServiceProtocol {
     func continentsCountries(id: String) -> Single<ContinentCountryRoot> {
         provider.rx.request(.continentsCountries(id))
             .map(ContinentCountryRoot.self)
+    }
+    
+    func allUrbanAreas() -> Single<UrbanAreasRoot> {
+        provider.rx.request(.allUrbanAreas)
+            .map(UrbanAreasRoot.self)
     }
 }
