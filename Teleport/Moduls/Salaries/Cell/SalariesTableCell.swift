@@ -11,13 +11,10 @@ import RxGesture
 import CoreServices
 
 final class SalariesTableCell: UITableViewCell {
-    
-    // MARK: Public Properties
-
-    var bag = DisposeBag()
-    let dataItems = PublishRelay<[AnyTableViewCellModelProtocol]>()
 
     // MARK: Private Properies
+    
+    private var bag = DisposeBag()
     
     private let jobName: UILabel = {
         let lbl = UILabel()
@@ -72,6 +69,8 @@ final class SalariesTableCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Life-cycle
     
     override func prepareForReuse() {
         super.prepareForReuse()

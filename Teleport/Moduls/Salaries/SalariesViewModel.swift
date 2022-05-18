@@ -21,7 +21,7 @@ final class SalariesViewModel {
     
     private let service: Service
     
-    // MARK: - Initializers
+    // MARK: - Init
     
     init(service: Service, id: String) {
         self.service = service

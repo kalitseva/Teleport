@@ -11,19 +11,12 @@ import RxCocoa
 
 final class SalariesTableCellViewModel: TableViewCellModelProtocol {
 
-    // MARK: Public Properties
-
-    let bag = DisposeBag()
-
     // MARK: Private Properties
     
     private let salariesResponse: SalaryMiddle
     private let service: Service
-    private var dataItems: [AnyTableViewCellModelProtocol]?
-    private var lessons: [SalaryPercentilesResponse] = []
 
-    
-    // MARK: Public Methods
+    // MARK: Init
     
     init(salary: SalaryMiddle, service: Service) {
         self.salariesResponse = salary
