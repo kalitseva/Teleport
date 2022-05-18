@@ -30,12 +30,6 @@ final class ContinentsCoordinator {
     
     // MARK: - Private Methods
     
-    private func showCountries(id: String) {
-        let vm = ContinentCountryViewModel(service: service, id: id)
-        let vc = ContinentCountryViewController(viewModel: vm)
-        navigationController?.pushViewController(vc, animated: false)
-    }
-    
     private func bindContinentsViewModel(viewModel: ContinentsViewModel) {
         viewModel
             .flow
@@ -46,5 +40,31 @@ final class ContinentsCoordinator {
                 }
             }
             .disposed(by: viewModel.bag)
+    }
+    
+    private func showCountries(id: String) {
+        let vm = ContinentCountryViewModel(service: service, id: id)
+        let vc = ContinentCountryViewController(viewModel: vm)
+        bindCountriesViewModel(viewModel: vm)
+        navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    private func bindCountriesViewModel(viewModel: ContinentCountryViewModel) {
+        viewModel
+            .flow
+            .bind { [weak self] flow in
+                switch flow {
+                case .onCountrySalaryTap(let country):
+                    self?.showSalaries(id: country)
+                    print("test salary \(country)")
+                }
+            }
+            .disposed(by: viewModel.bag)
+    }
+    
+    private func showSalaries(id: String) {
+        let vm = SalariesViewModel(service: service, id: id)
+        let vc = SalariesViewController(viewModel: vm)
+        navigationController?.pushViewController(vc, animated: false)
     }
 }

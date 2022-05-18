@@ -11,7 +11,7 @@ import RxCocoa
 final class ContinentCountryViewModel {
     
     enum Flow {
-        case showCountriesList(continent: String)
+        case onCountrySalaryTap(country: String)
     }
     
     // MARK: - Public Properties

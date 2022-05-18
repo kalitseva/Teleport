@@ -46,7 +46,12 @@
 		1391D8B6282E8F5500E1679E /* UrbanAreasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8B5282E8F5500E1679E /* UrbanAreasViewModel.swift */; };
 		1391D8B9282E8F6A00E1679E /* UrbanAreasTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8B8282E8F6A00E1679E /* UrbanAreasTableCell.swift */; };
 		1391D8BB282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8BA282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift */; };
-		1391D8BD282E900D00E1679E /* TimezonesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8BC282E900D00E1679E /* TimezonesResponse.swift */; };
+		1391D8BD282E900D00E1679E /* UrbansResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8BC282E900D00E1679E /* UrbansResponse.swift */; };
+		1391D8C0282F9AFF00E1679E /* SalariesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8BF282F9AFF00E1679E /* SalariesViewController.swift */; };
+		1391D8C2282F9B0C00E1679E /* SalariesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8C1282F9B0C00E1679E /* SalariesViewModel.swift */; };
+		1391D8C4282F9C4C00E1679E /* SalaryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8C3282F9C4C00E1679E /* SalaryResponse.swift */; };
+		1391D8C7282FA1B300E1679E /* SalariesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8C6282FA1B300E1679E /* SalariesTableCell.swift */; };
+		1391D8C9282FA1C100E1679E /* SalariesTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391D8C8282FA1C100E1679E /* SalariesTableCellViewModel.swift */; };
 		13BCE222282BB360004D7067 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BCE221282BB360004D7067 /* SearchCoordinator.swift */; };
 		13BCE226282BB3BF004D7067 /* ContinentsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BCE225282BB3BE004D7067 /* ContinentsCoordinator.swift */; };
 		13BCE228282BB3E1004D7067 /* UrbanAreasCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BCE227282BB3E1004D7067 /* UrbanAreasCoordinator.swift */; };
@@ -112,7 +117,12 @@
 		1391D8B5282E8F5500E1679E /* UrbanAreasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasViewModel.swift; sourceTree = "<group>"; };
 		1391D8B8282E8F6A00E1679E /* UrbanAreasTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasTableCell.swift; sourceTree = "<group>"; };
 		1391D8BA282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasTableCellViewModel.swift; sourceTree = "<group>"; };
-		1391D8BC282E900D00E1679E /* TimezonesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezonesResponse.swift; sourceTree = "<group>"; };
+		1391D8BC282E900D00E1679E /* UrbansResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbansResponse.swift; sourceTree = "<group>"; };
+		1391D8BF282F9AFF00E1679E /* SalariesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalariesViewController.swift; sourceTree = "<group>"; };
+		1391D8C1282F9B0C00E1679E /* SalariesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalariesViewModel.swift; sourceTree = "<group>"; };
+		1391D8C3282F9C4C00E1679E /* SalaryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryResponse.swift; sourceTree = "<group>"; };
+		1391D8C6282FA1B300E1679E /* SalariesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalariesTableCell.swift; sourceTree = "<group>"; };
+		1391D8C8282FA1C100E1679E /* SalariesTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalariesTableCellViewModel.swift; sourceTree = "<group>"; };
 		13BCE221282BB360004D7067 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		13BCE225282BB3BE004D7067 /* ContinentsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsCoordinator.swift; sourceTree = "<group>"; };
 		13BCE227282BB3E1004D7067 /* UrbanAreasCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasCoordinator.swift; sourceTree = "<group>"; };
@@ -182,8 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				132EC42E281DC0F4002CC1B2 /* ContinentsResponse.swift */,
+				1391D8C3282F9C4C00E1679E /* SalaryResponse.swift */,
 				138A3D082826927600996FC4 /* ContinentCountryResponse.swift */,
-				1391D8BC282E900D00E1679E /* TimezonesResponse.swift */,
+				1391D8BC282E900D00E1679E /* UrbansResponse.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -305,6 +316,7 @@
 		1391D8B2282E8F0A00E1679E /* Moduls */ = {
 			isa = PBXGroup;
 			children = (
+				1391D8BE282F9AEC00E1679E /* Salaries */,
 				132EC424281DBC06002CC1B2 /* Continents */,
 				138A3CFC28268AC500996FC4 /* ContinentCountry */,
 				1391D8B0282E8EEE00E1679E /* UrbanAreas */,
@@ -319,6 +331,25 @@
 				1391D8BA282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		1391D8BE282F9AEC00E1679E /* Salaries */ = {
+			isa = PBXGroup;
+			children = (
+				1391D8C5282FA1A600E1679E /* Cell */,
+				1391D8BF282F9AFF00E1679E /* SalariesViewController.swift */,
+				1391D8C1282F9B0C00E1679E /* SalariesViewModel.swift */,
+			);
+			path = Salaries;
+			sourceTree = "<group>";
+		};
+		1391D8C5282FA1A600E1679E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1391D8C6282FA1B300E1679E /* SalariesTableCell.swift */,
+				1391D8C8282FA1C100E1679E /* SalariesTableCellViewModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		13BCE21E282BB329004D7067 /* Coordinators */ = {
@@ -527,6 +558,7 @@
 				13BCE222282BB360004D7067 /* SearchCoordinator.swift in Sources */,
 				138A3D092826927600996FC4 /* ContinentCountryResponse.swift in Sources */,
 				132EC42D281DBC91002CC1B2 /* ContinentsTableCellViewModel.swift in Sources */,
+				1391D8C7282FA1B300E1679E /* SalariesTableCell.swift in Sources */,
 				138A3CEE28268A2B00996FC4 /* UITableView+Reusable.swift in Sources */,
 				1350F2252819C70A005CD992 /* Configuration.swift in Sources */,
 				138A3CF228268A3600996FC4 /* UICollectionView+ViewModel.swift in Sources */,
@@ -544,14 +576,18 @@
 				1391D8BB282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift in Sources */,
 				1391D8B6282E8F5500E1679E /* UrbanAreasViewModel.swift in Sources */,
 				138A3D0028268B2900996FC4 /* ContinentCountryViewModel.swift in Sources */,
+				1391D8C0282F9AFF00E1679E /* SalariesViewController.swift in Sources */,
 				132EC42F281DC0F4002CC1B2 /* ContinentsResponse.swift in Sources */,
 				138A3CFE28268B0A00996FC4 /* ContinentCountryViewController.swift in Sources */,
+				1391D8C2282F9B0C00E1679E /* SalariesViewModel.swift in Sources */,
 				138A3CF928268A5A00996FC4 /* Reusable.swift in Sources */,
 				138A3D0328268B4800996FC4 /* ContinentCountryCell.swift in Sources */,
-				1391D8BD282E900D00E1679E /* TimezonesResponse.swift in Sources */,
+				1391D8BD282E900D00E1679E /* UrbansResponse.swift in Sources */,
 				1391D8B4282E8F4700E1679E /* UrbanAreasViewController.swift in Sources */,
 				1350F2482819DCBB005CD992 /* TabBarCoordinator.swift in Sources */,
 				13BCE228282BB3E1004D7067 /* UrbanAreasCoordinator.swift in Sources */,
+				1391D8C9282FA1C100E1679E /* SalariesTableCellViewModel.swift in Sources */,
+				1391D8C4282F9C4C00E1679E /* SalaryResponse.swift in Sources */,
 				138A3CEF28268A2B00996FC4 /* UITableView+ViewMovel.swift in Sources */,
 				138A3D0528268B6000996FC4 /* ContinentCountryCellViewModel.swift in Sources */,
 				1350F2462819D92E005CD992 /* TabItem.swift in Sources */,

@@ -13,6 +13,7 @@ final class ContinentCountryViewController: UIViewController {
     // MARK: Public Properties
     
     private(set) var bag = DisposeBag()
+    lazy var onCountryTap = collectionView.rx.modelSelected(ContinentCountryCellViewModel.self).map { $0.continentCountry } // отслеживание выделения ячейки коллекции
     
     // MARK: Private Properties
     
@@ -63,8 +64,9 @@ final class ContinentCountryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindUI()
-        setupLayout()
         configure()
+        setupLayout()
+        bindCellTap()
     }
 
     // MARK: - Public Methods
@@ -86,6 +88,23 @@ final class ContinentCountryViewController: UIViewController {
     private func configure() {
         salariesLabel.text = "Want to know more about salaries?"
         chooseCountryLabel.text = "Choose country, please:"
+    }
+    
+    private func bindCellTap() {
+        onCountryTap
+            .bind { [weak self] tap in
+                let valueToRemove = "https://api.teleport.org/api/countries/"
+                var value = tap.href
+                value = (value.components(separatedBy: NSCharacterSet.decimalDigits) as NSArray).componentsJoined(by: "")
+                if let range = value.range(of: valueToRemove) {
+                    value.removeSubrange(range)
+                }
+                let index = value.index(value.startIndex, offsetBy: 9)
+                value.insert("2", at: index)
+                self?.viewModel.flow.accept(.onCountrySalaryTap(country: value))
+                print("test value \(value)")
+            }
+            .disposed(by: bag)
     }
 
     private func setupLayout() {
