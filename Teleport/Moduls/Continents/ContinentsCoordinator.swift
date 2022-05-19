@@ -56,7 +56,6 @@ final class ContinentsCoordinator {
                 switch flow {
                 case .onCountrySalaryTap(let country):
                     self?.showSalaries(id: country)
-                    print("test salary \(country)")
                 }
             }
             .disposed(by: viewModel.bag)
@@ -65,6 +64,21 @@ final class ContinentsCoordinator {
     private func showSalaries(id: String) {
         let vm = SalariesViewModel(service: service, id: id)
         let vc = SalariesViewController(viewModel: vm)
+        bindSalariesViewModel(viewModel: vm)
         navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    private func bindSalariesViewModel(viewModel: SalariesViewModel) {
+        viewModel
+            .flow
+            .bind { [weak self] flow in
+                switch flow {
+                case .onEmptyCountry:
+                    AlertController.noSalaryInfo {
+                        self?.navigationController?.popToRootViewController(animated: false)
+                    }
+                }
+            }
+            .disposed(by: viewModel.bag)
     }
 }

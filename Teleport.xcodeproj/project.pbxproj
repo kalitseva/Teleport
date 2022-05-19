@@ -20,6 +20,7 @@
 		1350F2442819D80A005CD992 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2432819D80A005CD992 /* CustomTabBarView.swift */; };
 		1350F2462819D92E005CD992 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2452819D92E005CD992 /* TabItem.swift */; };
 		1350F2482819DCBB005CD992 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2472819DCBB005CD992 /* TabBarCoordinator.swift */; };
+		1356B0622836404200C4B113 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B0612836404200C4B113 /* AlertController.swift */; };
 		1360456228159D1900578AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456128159D1900578AFF /* AppDelegate.swift */; };
 		1360456628159D1900578AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456528159D1900578AFF /* ViewController.swift */; };
 		1360456928159D1900578AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1360456728159D1900578AFF /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		1350F2432819D80A005CD992 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		1350F2452819D92E005CD992 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		1350F2472819DCBB005CD992 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		1356B0612836404200C4B113 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		1360455E28159D1900578AFF /* Teleport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1360456128159D1900578AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1360456528159D1900578AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 		1391D8BE282F9AEC00E1679E /* Salaries */ = {
 			isa = PBXGroup;
 			children = (
+				1391D8CF283561D000E1679E /* Views */,
 				1391D8C5282FA1A600E1679E /* Cell */,
 				1391D8BF282F9AFF00E1679E /* SalariesViewController.swift */,
 				1391D8C1282F9B0C00E1679E /* SalariesViewModel.swift */,
@@ -350,6 +353,14 @@
 				1391D8C8282FA1C100E1679E /* SalariesTableCellViewModel.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		1391D8CF283561D000E1679E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1356B0612836404200C4B113 /* AlertController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		13BCE21E282BB329004D7067 /* Coordinators */ = {
@@ -556,6 +567,7 @@
 				138A3CF328268A3600996FC4 /* UICollectionViewCell+Reusable.swift in Sources */,
 				1350F2422819D7D6005CD992 /* TabBarController.swift in Sources */,
 				13BCE222282BB360004D7067 /* SearchCoordinator.swift in Sources */,
+				1356B0622836404200C4B113 /* AlertController.swift in Sources */,
 				138A3D092826927600996FC4 /* ContinentCountryResponse.swift in Sources */,
 				132EC42D281DBC91002CC1B2 /* ContinentsTableCellViewModel.swift in Sources */,
 				1391D8C7282FA1B300E1679E /* SalariesTableCell.swift in Sources */,
