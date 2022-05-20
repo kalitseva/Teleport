@@ -19,7 +19,6 @@ final class TabBarCoordinator {
     let bag = DisposeBag()
     let flow = PublishRelay<Flow>()
     let continentsCoordinator = ContinentsCoordinator()
-    let searchCoordinator = SearchCoordinator()
     let urbansCoordinator = UrbanAreasCoordinator()
 
     // MARK: Private properties
@@ -39,7 +38,7 @@ final class TabBarCoordinator {
     // MARK: Private methods
 
     private func setTabControllers(for tabBarController: TabBarController) {
-        tabBarController.viewControllers = [continentsCoordinator.start(), searchCoordinator.start(), urbansCoordinator.start()]
+        tabBarController.viewControllers = [continentsCoordinator.start(), urbansCoordinator.start()]
     }
 
 

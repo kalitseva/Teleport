@@ -16,10 +16,10 @@ struct UrbanAreasRoot: Decodable, Equatable {
 }
 
 struct UrbanAreasMiddle: Decodable, Equatable {
-    let curies: [UrbanAreasResponse]
+    let uaItems: [UrbanAreasResponse]
     
     enum CodingKeys: String, CodingKey {
-        case curies = "curies"
+        case uaItems = "ua:item"
     }
 }
 

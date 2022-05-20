@@ -307,8 +307,8 @@
 		1391D8B0282E8EEE00E1679E /* UrbanAreas */ = {
 			isa = PBXGroup;
 			children = (
-				1391D8B7282E8F5C00E1679E /* Cells */,
 				13BCE227282BB3E1004D7067 /* UrbanAreasCoordinator.swift */,
+				1391D8B7282E8F5C00E1679E /* Cells */,
 				1391D8B3282E8F4700E1679E /* UrbanAreasViewController.swift */,
 				1391D8B5282E8F5500E1679E /* UrbanAreasViewModel.swift */,
 			);
