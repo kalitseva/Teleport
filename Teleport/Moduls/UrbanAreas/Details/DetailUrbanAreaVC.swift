@@ -1,19 +1,18 @@
 //
-//  UrbanAreasViewController.swift
+//  DetailUrbanAreaVC.swift
 //  Teleport
 //
-//  Created by Майя Калицева on 13.05.2022.
+//  Created by Майя Калицева on 24.05.2022.
 //
 
 import RxSwift
 import RxCocoa
 
-final class UrbanAreasViewController: UIViewController {
+final class DetailUrbanAreaVC: UIViewController {
     
     // MARK: Public Properies
 
     var bag = DisposeBag()
-    lazy var onItemTap = tableView.rx.modelSelected(UrbanAreasTableCellViewModel.self).map { $0 }
     
     // MARK: Private Properies
     
@@ -34,15 +33,15 @@ final class UrbanAreasViewController: UIViewController {
         tbv.keyboardDismissMode = .onDrag
         tbv.registerCells(
             withModels:
-                UrbanAreasTableCellViewModel.self)
+                DetailsUrbanAreaTableCellViewModel.self)
         return tbv
     }()
     
-    private let viewModel: UrbanAreasViewModel
+    private let viewModel: DetailsUrbanAreaVM
     
     // MARK: - Init
     
-    init(viewModel: UrbanAreasViewModel) {
+    init(viewModel: DetailsUrbanAreaVM) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -59,13 +58,12 @@ final class UrbanAreasViewController: UIViewController {
         bindVM()
         setupLayout()
         configure()
-        viewModel.getUrbansList()
     }
 
     // MARK: Private Methods
     
     private func configure() {
-        urbansLabel.text = "Urbans"
+        urbansLabel.text = "Details"
     }
     
     private func bindVM() {
@@ -76,19 +74,6 @@ final class UrbanAreasViewController: UIViewController {
                 let cell = tableView.dequeueReusableCell(withModel: data, for: indexPath)
                 data.configureAny(cell)
                 return cell
-            }
-            .disposed(by: bag)
-        
-        onItemTap
-            .bind { [weak self] tap in
-                let valueToRemove = "https://api.teleport.org/api/urban_areas"
-                var value = tap.urbanResponse.href
-                value = (value.components(separatedBy: NSCharacterSet.decimalDigits) as NSArray).componentsJoined(by: "")
-                if let range = value.range(of: valueToRemove) {
-                    value.removeSubrange(range)
-                }
-                self?.viewModel.flow.accept(.onUrbanTap(href: value))
-                print("test1 \(value)")
             }
             .disposed(by: bag)
     }
@@ -110,3 +95,4 @@ final class UrbanAreasViewController: UIViewController {
         }
     }
 }
+

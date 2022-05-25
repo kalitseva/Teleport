@@ -21,6 +21,18 @@
 		1350F2462819D92E005CD992 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2452819D92E005CD992 /* TabItem.swift */; };
 		1350F2482819DCBB005CD992 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350F2472819DCBB005CD992 /* TabBarCoordinator.swift */; };
 		1356B0622836404200C4B113 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B0612836404200C4B113 /* AlertController.swift */; };
+		1356B0642837E12000C4B113 /* UrbanAreasHref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B0632837E12000C4B113 /* UrbanAreasHref.swift */; };
+		1356B067283CFD4E00C4B113 /* DetailsUrbanAreaTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B066283CFD4E00C4B113 /* DetailsUrbanAreaTableView.swift */; };
+		1356B069283CFE3D00C4B113 /* DetailsUrbanAreaTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B068283CFE3D00C4B113 /* DetailsUrbanAreaTableCellViewModel.swift */; };
+		1356B06B283CFE9F00C4B113 /* DetailUrbanAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B06A283CFE9F00C4B113 /* DetailUrbanAreaVC.swift */; };
+		1356B06D283CFEBE00C4B113 /* DetailsUrbanAreaVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B06C283CFEBE00C4B113 /* DetailsUrbanAreaVM.swift */; };
+		1356B072283D04FD00C4B113 /* UrbanCitiesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B071283D04FD00C4B113 /* UrbanCitiesCollectionCell.swift */; };
+		1356B074283D050C00C4B113 /* UrbanAreasCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B073283D050C00C4B113 /* UrbanAreasCollectionCellViewModel.swift */; };
+		1356B076283D055800C4B113 /* UrbanAreasCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B075283D055800C4B113 /* UrbanAreasCity.swift */; };
+		1356B078283D063400C4B113 /* UrbanCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B077283D063400C4B113 /* UrbanCitiesViewController.swift */; };
+		1356B07A283D064400C4B113 /* UrbanCitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B079283D064400C4B113 /* UrbanCitiesViewModel.swift */; };
+		1356B07F283E578800C4B113 /* ScoresResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B07E283E578800C4B113 /* ScoresResponse.swift */; };
+		1356B081283E5B9400C4B113 /* UIProgressView + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356B080283E5B9400C4B113 /* UIProgressView + UILabel.swift */; };
 		1360456228159D1900578AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456128159D1900578AFF /* AppDelegate.swift */; };
 		1360456628159D1900578AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360456528159D1900578AFF /* ViewController.swift */; };
 		1360456928159D1900578AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1360456728159D1900578AFF /* Main.storyboard */; };
@@ -89,6 +101,18 @@
 		1350F2452819D92E005CD992 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		1350F2472819DCBB005CD992 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		1356B0612836404200C4B113 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		1356B0632837E12000C4B113 /* UrbanAreasHref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasHref.swift; sourceTree = "<group>"; };
+		1356B066283CFD4E00C4B113 /* DetailsUrbanAreaTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsUrbanAreaTableView.swift; sourceTree = "<group>"; };
+		1356B068283CFE3D00C4B113 /* DetailsUrbanAreaTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsUrbanAreaTableCellViewModel.swift; sourceTree = "<group>"; };
+		1356B06A283CFE9F00C4B113 /* DetailUrbanAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUrbanAreaVC.swift; sourceTree = "<group>"; };
+		1356B06C283CFEBE00C4B113 /* DetailsUrbanAreaVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsUrbanAreaVM.swift; sourceTree = "<group>"; };
+		1356B071283D04FD00C4B113 /* UrbanCitiesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanCitiesCollectionCell.swift; sourceTree = "<group>"; };
+		1356B073283D050C00C4B113 /* UrbanAreasCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasCollectionCellViewModel.swift; sourceTree = "<group>"; };
+		1356B075283D055800C4B113 /* UrbanAreasCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanAreasCity.swift; sourceTree = "<group>"; };
+		1356B077283D063400C4B113 /* UrbanCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanCitiesViewController.swift; sourceTree = "<group>"; };
+		1356B079283D064400C4B113 /* UrbanCitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanCitiesViewModel.swift; sourceTree = "<group>"; };
+		1356B07E283E578800C4B113 /* ScoresResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresResponse.swift; sourceTree = "<group>"; };
+		1356B080283E5B9400C4B113 /* UIProgressView + UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIProgressView + UILabel.swift"; sourceTree = "<group>"; };
 		1360455E28159D1900578AFF /* Teleport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1360456128159D1900578AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1360456528159D1900578AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +221,9 @@
 				1391D8C3282F9C4C00E1679E /* SalaryResponse.swift */,
 				138A3D082826927600996FC4 /* ContinentCountryResponse.swift */,
 				1391D8BC282E900D00E1679E /* UrbansResponse.swift */,
+				1356B0632837E12000C4B113 /* UrbanAreasHref.swift */,
+				1356B075283D055800C4B113 /* UrbanAreasCity.swift */,
+				1356B07E283E578800C4B113 /* ScoresResponse.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -210,6 +237,54 @@
 				1350F2472819DCBB005CD992 /* TabBarCoordinator.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		1356B065283CFD2B00C4B113 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1356B07B283E4EA200C4B113 /* View */,
+				1356B06E283D035B00C4B113 /* Cells */,
+				1356B06A283CFE9F00C4B113 /* DetailUrbanAreaVC.swift */,
+				1356B06C283CFEBE00C4B113 /* DetailsUrbanAreaVM.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		1356B06E283D035B00C4B113 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1356B066283CFD4E00C4B113 /* DetailsUrbanAreaTableView.swift */,
+				1356B068283CFE3D00C4B113 /* DetailsUrbanAreaTableCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1356B06F283D036A00C4B113 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1391D8BA282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift */,
+				1391D8B8282E8F6A00E1679E /* UrbanAreasTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1356B070283D04E900C4B113 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				1356B071283D04FD00C4B113 /* UrbanCitiesCollectionCell.swift */,
+				1356B073283D050C00C4B113 /* UrbanAreasCollectionCellViewModel.swift */,
+				1356B077283D063400C4B113 /* UrbanCitiesViewController.swift */,
+				1356B079283D064400C4B113 /* UrbanCitiesViewModel.swift */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		1356B07B283E4EA200C4B113 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1356B080283E5B9400C4B113 /* UIProgressView + UILabel.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1360455528159D1900578AFF = {
@@ -307,8 +382,10 @@
 		1391D8B0282E8EEE00E1679E /* UrbanAreas */ = {
 			isa = PBXGroup;
 			children = (
+				1356B070283D04E900C4B113 /* Cities */,
 				13BCE227282BB3E1004D7067 /* UrbanAreasCoordinator.swift */,
-				1391D8B7282E8F5C00E1679E /* Cells */,
+				1356B065283CFD2B00C4B113 /* Details */,
+				1391D8B7282E8F5C00E1679E /* AllUrbans */,
 				1391D8B3282E8F4700E1679E /* UrbanAreasViewController.swift */,
 				1391D8B5282E8F5500E1679E /* UrbanAreasViewModel.swift */,
 			);
@@ -326,13 +403,12 @@
 			path = Moduls;
 			sourceTree = "<group>";
 		};
-		1391D8B7282E8F5C00E1679E /* Cells */ = {
+		1391D8B7282E8F5C00E1679E /* AllUrbans */ = {
 			isa = PBXGroup;
 			children = (
-				1391D8B8282E8F6A00E1679E /* UrbanAreasTableCell.swift */,
-				1391D8BA282E8F7900E1679E /* UrbanAreasTableCellViewModel.swift */,
+				1356B06F283D036A00C4B113 /* Cells */,
 			);
-			path = Cells;
+			path = AllUrbans;
 			sourceTree = "<group>";
 		};
 		1391D8BE282F9AEC00E1679E /* Salaries */ = {
@@ -565,18 +641,26 @@
 			files = (
 				1360456628159D1900578AFF /* ViewController.swift in Sources */,
 				138A3CF328268A3600996FC4 /* UICollectionViewCell+Reusable.swift in Sources */,
+				1356B07A283D064400C4B113 /* UrbanCitiesViewModel.swift in Sources */,
 				1350F2422819D7D6005CD992 /* TabBarController.swift in Sources */,
+				1356B0642837E12000C4B113 /* UrbanAreasHref.swift in Sources */,
 				13BCE222282BB360004D7067 /* SearchCoordinator.swift in Sources */,
 				1356B0622836404200C4B113 /* AlertController.swift in Sources */,
+				1356B074283D050C00C4B113 /* UrbanAreasCollectionCellViewModel.swift in Sources */,
 				138A3D092826927600996FC4 /* ContinentCountryResponse.swift in Sources */,
 				132EC42D281DBC91002CC1B2 /* ContinentsTableCellViewModel.swift in Sources */,
 				1391D8C7282FA1B300E1679E /* SalariesTableCell.swift in Sources */,
 				138A3CEE28268A2B00996FC4 /* UITableView+Reusable.swift in Sources */,
 				1350F2252819C70A005CD992 /* Configuration.swift in Sources */,
 				138A3CF228268A3600996FC4 /* UICollectionView+ViewModel.swift in Sources */,
+				1356B081283E5B9400C4B113 /* UIProgressView + UILabel.swift in Sources */,
+				1356B067283CFD4E00C4B113 /* DetailsUrbanAreaTableView.swift in Sources */,
 				1350F2292819C7AD005CD992 /* Target.swift in Sources */,
 				132EC427281DBC3A002CC1B2 /* ContinentsViewController.swift in Sources */,
+				1356B072283D04FD00C4B113 /* UrbanCitiesCollectionCell.swift in Sources */,
+				1356B078283D063400C4B113 /* UrbanCitiesViewController.swift in Sources */,
 				132EC42B281DBC80002CC1B2 /* ContinentsTableCell.swift in Sources */,
+				1356B076283D055800C4B113 /* UrbanAreasCity.swift in Sources */,
 				138A3CF528268A4500996FC4 /* AnyCellViewModelProtocol.swift in Sources */,
 				13BCE226282BB3BF004D7067 /* ContinentsCoordinator.swift in Sources */,
 				138A3CED28268A2B00996FC4 /* UITableViewCell+Reusable.swift in Sources */,
@@ -589,10 +673,12 @@
 				1391D8B6282E8F5500E1679E /* UrbanAreasViewModel.swift in Sources */,
 				138A3D0028268B2900996FC4 /* ContinentCountryViewModel.swift in Sources */,
 				1391D8C0282F9AFF00E1679E /* SalariesViewController.swift in Sources */,
+				1356B07F283E578800C4B113 /* ScoresResponse.swift in Sources */,
 				132EC42F281DC0F4002CC1B2 /* ContinentsResponse.swift in Sources */,
 				138A3CFE28268B0A00996FC4 /* ContinentCountryViewController.swift in Sources */,
 				1391D8C2282F9B0C00E1679E /* SalariesViewModel.swift in Sources */,
 				138A3CF928268A5A00996FC4 /* Reusable.swift in Sources */,
+				1356B06D283CFEBE00C4B113 /* DetailsUrbanAreaVM.swift in Sources */,
 				138A3D0328268B4800996FC4 /* ContinentCountryCell.swift in Sources */,
 				1391D8BD282E900D00E1679E /* UrbansResponse.swift in Sources */,
 				1391D8B4282E8F4700E1679E /* UrbanAreasViewController.swift in Sources */,
@@ -603,8 +689,10 @@
 				138A3CEF28268A2B00996FC4 /* UITableView+ViewMovel.swift in Sources */,
 				138A3D0528268B6000996FC4 /* ContinentCountryCellViewModel.swift in Sources */,
 				1350F2462819D92E005CD992 /* TabItem.swift in Sources */,
+				1356B069283CFE3D00C4B113 /* DetailsUrbanAreaTableCellViewModel.swift in Sources */,
 				1350F2272819C7A3005CD992 /* Service.swift in Sources */,
 				138A3CF728268A5200996FC4 /* CollectionViewCellModelProtocol.swift in Sources */,
+				1356B06B283CFE9F00C4B113 /* DetailUrbanAreaVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

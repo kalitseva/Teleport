@@ -8,11 +8,9 @@
 
 struct SalaryRoot: Decodable, Equatable {
     let salaries: [SalaryMiddle]
- //   let links: SalaryCuries
     
     enum CodingKeys: String, CodingKey {
         case salaries = "salaries"
-      //  case links = "_links"
     }
 }
 
