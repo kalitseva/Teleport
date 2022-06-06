@@ -12,6 +12,7 @@ import RxSwift
 protocol ServiceProtocol {
     func allCountries() -> Single<CountryRoot>
     func allContinents() -> Single<ContinentRoot>
+    func continentsCountries(id: String) -> Single<ContinentCountryRoot>
 }
 
 final class Service: ServiceProtocol {
@@ -40,5 +41,10 @@ final class Service: ServiceProtocol {
     func allContinents() -> Single<ContinentRoot> {
         provider.rx.request(.allContinents)
             .map(ContinentRoot.self)
+    }
+    
+    func continentsCountries(id: String) -> Single<ContinentCountryRoot> {
+        provider.rx.request(.continentsCountries(id))
+            .map(ContinentCountryRoot.self)
     }
 }

@@ -14,6 +14,7 @@ final class ContinentsViewController: UIViewController {
     
     // MARK: Public Properies
     
+    lazy var onContinentTap = continentsTableView.rx.modelSelected(ContinentsTableCellViewModel.self).map { $0.continentName } // отслеживание выделения ячейки коллекции, срабатывает
     let bag = DisposeBag()
     
     // MARK: Private Properies
@@ -32,7 +33,7 @@ final class ContinentsViewController: UIViewController {
         tbv.separatorStyle = .singleLine
         tbv.tableFooterView = UIView()
         tbv.rowHeight = UITableView.automaticDimension
-        tbv.delaysContentTouches = false
+     //   tbv.delaysContentTouches = false
         tbv.keyboardDismissMode = .onDrag
         tbv.registerCells(
             withModels:
@@ -41,14 +42,14 @@ final class ContinentsViewController: UIViewController {
     }()
     
     private let viewModel: ContinentsViewModel
-
+    
     // MARK: - Init
-
+    
     init(viewModel: ContinentsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -80,6 +81,18 @@ final class ContinentsViewController: UIViewController {
                 let cell = tableView.dequeueReusableCell(withModel: data, for: indexPath)
                 data.configureAny(cell)
                 return cell
+            }
+            .disposed(by: bag)
+        
+        onContinentTap
+            .bind { [weak self] tap in
+                let valueToRemove = "https://api.teleport.org/api/continents"
+                var value = tap.href
+                value = (value.components(separatedBy: NSCharacterSet.decimalDigits) as NSArray).componentsJoined(by: "")
+                if let range = value.range(of: valueToRemove) {
+                    value.removeSubrange(range)
+                }
+                self?.viewModel.flow.accept(.onContinentTap(continent: value))
             }
             .disposed(by: bag)
     }

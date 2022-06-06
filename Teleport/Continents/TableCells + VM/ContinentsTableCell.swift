@@ -5,12 +5,19 @@
 //  Created by Майя Калицева on 30.04.2022.
 //
 
-import UIKit
+import RxCocoa
+import RxSwift
+import RxGesture
 
 final class ContinentsTableCell: UITableViewCell {
     
+    // MARK: Public Properties
+
+    let bag = DisposeBag()
+    let onItemSelected = PublishRelay<ContinentsResponse>()
+
     // MARK: Private Properies
-    
+
     private let continentName: UILabel = {
         let lbl = UILabel()
         lbl.font = UIFont.systemFont(ofSize: 15)
@@ -18,7 +25,7 @@ final class ContinentsTableCell: UITableViewCell {
         lbl.numberOfLines = 0
         return lbl
     }()
-    
+
     // MARK: - Init
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

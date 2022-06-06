@@ -12,10 +12,16 @@ import SwiftUI
 
 final class ContinentsViewModel {
     
+    enum Flow {
+        case onContinentTap(continent: String)
+    }
+    
     // MARK: Public Properties
     
     private(set) var dataItems = PublishRelay<[AnyTableViewCellModelProtocol]>()
+    let href = PublishRelay<String>()
     let bag = DisposeBag()
+    let flow = PublishRelay<Flow>()
     
     // MARK: Private Properties
     
