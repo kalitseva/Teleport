@@ -16,6 +16,23 @@ final class ContinentCountryViewController: UIViewController {
     
     // MARK: Private Properties
     
+    private let salariesLabel: UILabel = {
+        let lbl = UILabel()
+        lbl.textColor = UIColor.systemBlue.withAlphaComponent(0.7)
+        lbl.font = UIFont.boldSystemFont(ofSize: 17)
+        lbl.numberOfLines = 0
+        return lbl
+    }()
+    
+    private let chooseCountryLabel: UILabel = {
+        let lbl = UILabel()
+        lbl.textColor = UIColor.systemBlue.withAlphaComponent(0.8)
+        lbl.font = UIFont.boldSystemFont(ofSize: 15)
+        lbl.numberOfLines = 0
+        lbl.backgroundColor = UIColor.systemYellow.withAlphaComponent(0.2)
+        return lbl
+    }()
+    
     private let viewModel: ContinentCountryViewModel
     
     private let collectionView: UICollectionView = {
@@ -47,9 +64,10 @@ final class ContinentCountryViewController: UIViewController {
         super.viewDidLoad()
         bindUI()
         setupLayout()
+        configure()
     }
 
-    // MARK: - Public Method
+    // MARK: - Public Methods
     
     func bindUI() {
         viewModel
@@ -62,13 +80,34 @@ final class ContinentCountryViewController: UIViewController {
             }
             .disposed(by: bag)
     }
+    
+    // MARK: - Private Methods
+    
+    private func configure() {
+        salariesLabel.text = "Want to know more about salaries?"
+        chooseCountryLabel.text = "Choose country, please:"
+    }
 
     private func setupLayout() {
         view.backgroundColor = UIColor.white
+        view.addSubview(salariesLabel)
+        view.addSubview(chooseCountryLabel)
         view.addSubview(collectionView)
+        
+        salariesLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(50)
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(chooseCountryLabel.snp.top).inset(-15)
+        }
+        
+        chooseCountryLabel.snp.makeConstraints { make in
+            make.top.equalTo(salariesLabel.snp.bottom).inset(15)
+            make.leading.equalToSuperview().inset(8)
+            make.bottom.equalTo(collectionView.snp.top).inset(-15)
+        }
 
         collectionView.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(15)
+            make.top.equalTo(chooseCountryLabel.snp.bottom).inset(15)
             make.leading.trailing.equalToSuperview()
             make.bottom.equalToSuperview().inset(30)
         }

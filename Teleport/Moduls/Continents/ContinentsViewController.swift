@@ -19,11 +19,20 @@ final class ContinentsViewController: UIViewController {
     
     // MARK: Private Properies
     
-    private let continentsLabel: UILabel = {
+    private let salariesLabel: UILabel = {
         let lbl = UILabel()
-        lbl.textColor = UIColor.systemBlue.withAlphaComponent(0.6)
+        lbl.textColor = UIColor.systemBlue.withAlphaComponent(0.7)
         lbl.font = UIFont.boldSystemFont(ofSize: 17)
         lbl.numberOfLines = 0
+        return lbl
+    }()
+    
+    private let chooseContinentLabel: UILabel = {
+        let lbl = UILabel()
+        lbl.textColor = UIColor.systemBlue.withAlphaComponent(0.8)
+        lbl.font = UIFont.boldSystemFont(ofSize: 15)
+        lbl.numberOfLines = 0
+        lbl.backgroundColor = UIColor.systemYellow.withAlphaComponent(0.2)
         return lbl
     }()
     
@@ -67,7 +76,8 @@ final class ContinentsViewController: UIViewController {
     // MARK: Public Methods
     
     func configure() {
-        continentsLabel.text = "Continents"
+        salariesLabel.text = "Want to know more about salaries?"
+        chooseContinentLabel.text = "Choose continent, please:"
     }
     
     // MARK: Private Methods
@@ -97,17 +107,24 @@ final class ContinentsViewController: UIViewController {
     }
     
     private func setupLayout() {
-        view.addSubview(continentsLabel)
+        view.addSubview(salariesLabel)
+        view.addSubview(chooseContinentLabel)
         view.addSubview(continentsTableView)
         
-        continentsLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(30)
+        salariesLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(50)
             make.centerX.equalToSuperview()
+            make.bottom.equalTo(chooseContinentLabel.snp.top).inset(-15)
+        }
+        
+        chooseContinentLabel.snp.makeConstraints { make in
+            make.top.equalTo(salariesLabel.snp.bottom).inset(15)
+            make.leading.equalToSuperview().inset(8)
             make.bottom.equalTo(continentsTableView.snp.top).inset(-15)
         }
         
         continentsTableView.snp.makeConstraints { make in
-            make.top.equalTo(continentsLabel.snp.bottom).inset(15)
+            make.top.equalTo(chooseContinentLabel.snp.bottom).inset(15)
             make.leading.trailing.equalToSuperview()
             make.bottom.equalToSuperview().inset(-15)
         }

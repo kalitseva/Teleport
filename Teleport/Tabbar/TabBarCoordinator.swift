@@ -18,10 +18,9 @@ final class TabBarCoordinator {
 
     let bag = DisposeBag()
     let flow = PublishRelay<Flow>()
-    let countryCoordinator = CountryCoordinator()
-    let searchCoordinator = SearchCoordinator()
     let continentsCoordinator = ContinentsCoordinator()
-    let timezonesCoordinator = UrbanAreasCoordinator()
+    let searchCoordinator = SearchCoordinator()
+    let urbansCoordinator = UrbanAreasCoordinator()
 
     // MARK: Private properties
 
@@ -40,7 +39,7 @@ final class TabBarCoordinator {
     // MARK: Private methods
 
     private func setTabControllers(for tabBarController: TabBarController) {
-        tabBarController.viewControllers = [countryCoordinator.start(), searchCoordinator.start(), continentsCoordinator.start(), timezonesCoordinator.start()]
+        tabBarController.viewControllers = [continentsCoordinator.start(), searchCoordinator.start(), urbansCoordinator.start()]
     }
 
 
@@ -52,15 +51,8 @@ final class TabBarCoordinator {
             .bind { [weak self] flow in
                 guard let self = self else { return }
                 switch flow {
-                case .countries:
+                case .countries, .cities, .search, .timezones:
                    return
-                   // self.countryCoordinator.navigationController?.popToRootViewController(animated: false)
-                case .cities:
-                    return
-                   // self.continentsCoordinator.navigationController?.popToRootViewController(animated: false)
-                case .search, .timezones:
-                    let vc = ViewController()
-                    self.tabBarController.present(vc, animated: true)
                 }
             }
             .disposed(by: tabBarController.customTabBarView.bag)

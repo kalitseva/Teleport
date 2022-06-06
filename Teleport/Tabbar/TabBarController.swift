@@ -17,7 +17,7 @@ final class TabBarController: UITabBarController {
     // MARK: - Private properties
 
     private let customTabbarHeight: CGFloat = 55
-    private let tabItems: [TabItem] = [.countries, .search, .cities, .timezones]
+    private let tabItems: [TabItem] = [.salaries, .picturesSearch, .urbans]
 
     lazy var customTabBarView: CustomTabBarView = {
         let iv = CustomTabBarView(menuItems: tabItems)

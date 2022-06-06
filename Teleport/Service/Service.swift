@@ -10,7 +10,6 @@ import Moya
 import RxSwift
 
 protocol ServiceProtocol {
-    func allCountries() -> Single<CountryRoot>
     func allContinents() -> Single<ContinentRoot>
     func continentsCountries(id: String) -> Single<ContinentCountryRoot>
     func allUrbanAreas() -> Single<UrbanAreasRoot>
@@ -33,12 +32,7 @@ final class Service: ServiceProtocol {
     }()
     
     // MARK: - Public Methods
-    
-    func allCountries() -> Single<CountryRoot> {
-        provider.rx.request(.allCountries)
-            .map(CountryRoot.self)
-    }
-    
+
     func allContinents() -> Single<ContinentRoot> {
         provider.rx.request(.allContinents)
             .map(ContinentRoot.self)
