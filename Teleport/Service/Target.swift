@@ -34,7 +34,7 @@ extension Target: TargetType {
         case .countriesSalaries(let id):
             return "/countries/\(id)salaries/"
         case .allUrbanAreas:
-            return "/urban_areas/"
+            return "urban_areas/"
         }
     }
     
