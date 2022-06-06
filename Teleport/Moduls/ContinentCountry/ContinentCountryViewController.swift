@@ -102,7 +102,6 @@ final class ContinentCountryViewController: UIViewController {
                 let index = value.index(value.startIndex, offsetBy: 9)
                 value.insert("2", at: index)
                 self?.viewModel.flow.accept(.onCountrySalaryTap(country: value))
-                print("test value \(value)")
             }
             .disposed(by: bag)
     }

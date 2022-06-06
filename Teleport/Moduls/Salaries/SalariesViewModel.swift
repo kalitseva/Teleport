@@ -10,12 +10,17 @@ import RxSwift
 import RxCocoa
 
 final class SalariesViewModel {
-
+    
+    enum Flow {
+        case onEmptyCountry
+    }
+    
     // MARK: Public Properties
     
     private(set) var dataItems = PublishRelay<[AnyTableViewCellModelProtocol]>()
     let id: String
     let bag = DisposeBag()
+    let flow = PublishRelay<Flow>()
     
     // MARK: Private Properties
     
@@ -38,8 +43,12 @@ final class SalariesViewModel {
                 guard let self = self else { return }
                 switch event {
                 case .success(let response):
-                    let salaries = response.salaries.map { SalariesTableCellViewModel(salary: $0, service: self.service)}
-                    self.dataItems.accept(salaries)
+                    if response.salaries.isEmpty {
+                        self.flow.accept(.onEmptyCountry)
+                    } else {
+                        let salaries = response.salaries.map { SalariesTableCellViewModel(salary: $0, service: self.service)}
+                        self.dataItems.accept(salaries)
+                    }
                 case .error(let error):
                     print(error)
                 }
