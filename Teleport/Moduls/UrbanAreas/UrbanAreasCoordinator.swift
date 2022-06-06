@@ -23,23 +23,23 @@ final class UrbanAreasCoordinator {
         return navigationController
     }
 
+    
     private func bindContinentsViewModel(viewModel: UrbanAreasViewModel) {
         viewModel
             .flow
             .bind { [weak self] flow in
                 switch flow {
                 case .onUrbanTap(let href):
-                    print("test tap")
                     self?.showDetails(id: href)
                 }
             }
             .disposed(by: viewModel.bag)
     }
-    
+
     private func showDetails(id: String) {
         let vm = DetailsUrbanAreaVM(service: service)
         let vc = DetailUrbanAreaVC(viewModel: vm)
-        vm.getUrbansScoresList(id: id)
+        vm.getUrbansDetailsList(id: id, vc: vc)
         navigationController?.pushViewController(vc, animated: false)
     }
 }

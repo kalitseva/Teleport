@@ -18,7 +18,7 @@ struct UrbanAreasHrefRoot: Decodable, Equatable {
 struct UrbanAreasHrefResponse: Decodable, Equatable {
     let continent: String
     let fullName: String
-    let mayor: String
+    let mayor: String?
     let name: String
     let uaId: String
     

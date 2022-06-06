@@ -10,16 +10,10 @@ import RxSwift
 import RxCocoa
 
 final class DetailsUrbanAreaVM {
-    
-    enum Flow {
-        case uiID(id: String)
-    }
-    
+
     // MARK: Public Properties
-    
-    private(set) var dataItems = PublishRelay<[AnyTableViewCellModelProtocol]>()
+
     let bag = DisposeBag()
-    let flow = PublishRelay<Flow>()
     
     // MARK: Private Properties
     
@@ -32,38 +26,29 @@ final class DetailsUrbanAreaVM {
     }
     
     // MARK: Public Methods
-    /*
-    func getUrbansScoresList(id: String, uaID: String) {
-        Single.zip(service.urbanAreasHref(id: id), service.score(id: uaID))
+    
+    func getUrbansDetailsList(id: String, vc: DetailUrbanAreaVC) {
+        service.urbanAreasHref(id: id)
             .subscribe { [weak self] event in
                 guard let self = self else { return }
                 switch event {
-                case .success((let response1, let response2)):
-                    var items: [AnyTableViewCellModelProtocol] = []
-                    let urbans = DetailsUrbanAreaTableCellViewModel(urbanResponse: response1, scoresResponse: response2)
-                    self.flow.accept(.uiID(id: response1.uaId))
-                    items.append(urbans)
-                    self.dataItems.accept(items)
+                case .success(let response):
+                    let uaID = response.uaId
+                    vc.configureDetails(details: response)
+                    self.getScores(uaID: uaID, vc: vc)
                 case .error(let error):
                     print(error)
                 }
             }
             .disposed(by: bag)
     }
-     */
     
-    func getUrbansScoresList(id: String) {
-       service
-            .urbanAreasHref(id: id)
+    func getScores(uaID: String, vc: DetailUrbanAreaVC) {
+        service.score(id: uaID)
             .subscribe { [weak self] event in
-                guard let self = self else { return }
                 switch event {
                 case .success(let response):
-                    var items: [AnyTableViewCellModelProtocol] = []
-                    let urbans = DetailsUrbanAreaTableCellViewModel(urbanResponse: response)
-                    self.flow.accept(.uiID(id: response.uaId))
-                    items.append(urbans)
-                    self.dataItems.accept(items)
+                    vc.configureScores(scores: response)
                 case .error(let error):
                     print(error)
                 }

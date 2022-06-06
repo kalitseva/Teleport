@@ -40,16 +40,3 @@ struct SalaryPercentilesResponse: Decodable, Equatable {
         case percentile75 = "percentile_75"
     }
 }
-
-
-/*
-struct SalaryCuries: Decodable, Equatable {
-    let curies: [SalaryCuriesRoot]
-}
-
-struct SalaryCuriesRoot: Decodable, Equatable {
-    let href: String
-    let name: String
-    let templated: Bool
-}
-*/

@@ -13,5 +13,6 @@ pod 'RxGesture'
 pod 'RxDataSources'
 pod 'Moya/RxSwift', '~> 14.0'
 pod 'SnapKit'
+pod 'Kingfisher'
 
 end

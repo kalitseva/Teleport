@@ -15,7 +15,7 @@ protocol ServiceProtocol {
     func countriesSalaries(id: String) -> Single<SalaryRoot>
     func allUrbanAreas() -> Single<UrbanAreasRoot>
     func urbanAreasHref(id: String) -> Single<UrbanAreasHrefResponse>
-    func score(id: String) -> Single<ScoresResponse>
+    func score(id: String) -> Single<ScoresRoot>
 }
 
 final class Service: ServiceProtocol {
@@ -61,8 +61,8 @@ final class Service: ServiceProtocol {
             .map(UrbanAreasHrefResponse.self)
     }
     
-    func score(id: String) -> Single<ScoresResponse> {
+    func score(id: String) -> Single<ScoresRoot> {
         provider.rx.request(.score(id))
-            .map(ScoresResponse.self)
+            .map(ScoresRoot.self)
     }
 }

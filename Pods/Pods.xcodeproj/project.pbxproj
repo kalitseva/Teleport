@@ -724,7 +724,7 @@
 		3240BF90070B1DBD1989B357DD88DA98 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		32657DDFA11889226FD6BF022CB76EED /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		32866D589CDF548C8BCEDE18422B248E /* UIScreenEdgePanGestureRecognizer+RxGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreenEdgePanGestureRecognizer+RxGesture.swift"; path = "Pod/Classes/iOS/UIScreenEdgePanGestureRecognizer+RxGesture.swift"; sourceTree = "<group>"; };
-		32BDACC993AE9E2C51BC283E157C6AD2 /* Pods-Teleport */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Teleport"; path = Pods_Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BDACC993AE9E2C51BC283E157C6AD2 /* Pods_Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3435E75DFEFC83E41D83354232A530D4 /* UIRefreshControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIRefreshControl+Rx.swift"; path = "RxCocoa/iOS/UIRefreshControl+Rx.swift"; sourceTree = "<group>"; };
 		346DDDDEED5B18A60857493864DAF33C /* UIAlertAction+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertAction+Rx.swift"; path = "RxCocoa/iOS/UIAlertAction+Rx.swift"; sourceTree = "<group>"; };
 		34ED2E1EB810465D2225D0D4BA435CA9 /* DefaultIfEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultIfEmpty.swift; path = RxSwift/Observables/DefaultIfEmpty.swift; sourceTree = "<group>"; };
@@ -926,7 +926,7 @@
 		9CE5CAB4CCADA0AE678138C217BEFD68 /* RxWKNavigationDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxWKNavigationDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxWKNavigationDelegateProxy.swift; sourceTree = "<group>"; };
 		9D360FE6C141D827004F829014D86F0B /* DataSources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSources.swift; path = Sources/RxDataSources/DataSources.swift; sourceTree = "<group>"; };
 		9D55B5296E2415E35611DF8F105C36E4 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Rx.swift"; path = "Sources/RxMoya/MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E00EF12FC144AEFA3E548DC9269CBB3 /* TailRecursiveSink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TailRecursiveSink.swift; path = RxSwift/Observers/TailRecursiveSink.swift; sourceTree = "<group>"; };
 		9E20178160EEE5E241375AE9C105EEF1 /* NSTextField+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextField+Rx.swift"; path = "RxCocoa/macOS/NSTextField+Rx.swift"; sourceTree = "<group>"; };
 		9ECE63E1AF0B6FF232A5EAF589A4B9B3 /* RecursiveLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecursiveLock.swift; path = Platform/RecursiveLock.swift; sourceTree = "<group>"; };
@@ -1264,7 +1264,6 @@
 				757EFB276656663F72CC4421CC455314 /* Utils.swift */,
 				3BFD27DDA585ABF7470802850AA0A8D7 /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -1288,7 +1287,6 @@
 				051C7DEF82D4620CE02542B076E35336 /* View+RxGesture.swift */,
 				6B337B146168B27AEC378CCFC373881F /* Support Files */,
 			);
-			name = RxGesture;
 			path = RxGesture;
 			sourceTree = "<group>";
 		};
@@ -1298,7 +1296,6 @@
 				69DCF012E7DDBEF98942A290C3E7143A /* RxKeyboard.swift */,
 				328FFD684054832A95F1205F6E6EDC0C /* Support Files */,
 			);
-			name = RxKeyboard;
 			path = RxKeyboard;
 			sourceTree = "<group>";
 		};
@@ -1430,7 +1427,6 @@
 				DFEA96C5B657F935178A3645266236E9 /* WKWebView+Rx.swift */,
 				39C62E2C6A08E678AF015A1BC6878494 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -1476,7 +1472,6 @@
 				3F9D16B5F058ED68989B38EED709903A /* UILayoutSupport+Extensions.swift */,
 				F43D6903717D58AE362E25C745C2A981 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -1604,7 +1599,6 @@
 				7D4EAA87CD19C8ABC87183CBCA9E661D /* RxSwift */,
 				E222FED76B6119CE4C763A259EC8A636 /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -1689,7 +1683,6 @@
 				1D042ECD24794834F01FC8AB8A247CAB /* Validation.swift */,
 				4464BE12967B955C2B11E12D687AFB83 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1725,7 +1718,6 @@
 				74E574BFBD9004584CC7FB4F72BCA7CE /* Utilities.swift */,
 				9C462C5582A8060D73C8DEF5E004D71B /* Support Files */,
 			);
-			name = Differentiator;
 			path = Differentiator;
 			sourceTree = "<group>";
 		};
@@ -1884,7 +1876,6 @@
 				CC87E5FEAC585B19104D36A98AEDBFF4 /* Zip+Collection.swift */,
 				8392FC2902FE3FD77C42B0E3705CE4B1 /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -1894,7 +1885,7 @@
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
 				D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */,
 				3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */,
-				32BDACC993AE9E2C51BC283E157C6AD2 /* Pods-Teleport */,
+				32BDACC993AE9E2C51BC283E157C6AD2 /* Pods_Teleport.framework */,
 				BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa */,
 				692F92D73EC27270EA9CC9575C3E65B6 /* RxDataSources */,
 				4C7573034822F093BCAF13EC6B7B8454 /* RxGesture */,
@@ -1955,7 +1946,6 @@
 				5C6AE3C7698F2DF0C7EF2B5329275AA4 /* ViewTransition.swift */,
 				0FC98BA3027E17F0251CBEEDBEB9BA6C /* Support Files */,
 			);
-			name = RxDataSources;
 			path = RxDataSources;
 			sourceTree = "<group>";
 		};
@@ -2199,7 +2189,7 @@
 			);
 			name = "Pods-Teleport";
 			productName = Pods_Teleport;
-			productReference = 32BDACC993AE9E2C51BC283E157C6AD2 /* Pods-Teleport */;
+			productReference = 32BDACC993AE9E2C51BC283E157C6AD2 /* Pods_Teleport.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4622BFEF3DC16E8BD15EEFC30D4D0084 /* RxRelay */ = {
