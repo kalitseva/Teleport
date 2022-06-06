@@ -24,7 +24,7 @@ final class ContinentCountryViewModel {
     // MARK: - Private Properties
     
     let collectionDataItems = PublishRelay<[ContinentCountryCellViewModel]>()
-    
+
     // MARK: - Initializers
     
     init(service: Service, id: String) {
@@ -42,7 +42,6 @@ final class ContinentCountryViewModel {
             collectionDataItems.accept(collectionItems)
         }
     }
-    
     
     func continentsCountries(id: String) {
         service

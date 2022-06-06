@@ -27,8 +27,6 @@ final class CustomTabBarView: UIView {
     // MARK: - Private properties
     
     private var buttons: [UIButton] = []
-    private let invisibleHeight: CGFloat = 38
-    private var shapeLayer: CALayer?
     private var activeItem: Int = 0
     
     // MARK: - Initializers
@@ -58,7 +56,7 @@ final class CustomTabBarView: UIView {
             tabBarItem.snp.makeConstraints { make in
                 make.size.equalTo(40)
                 make.centerX.equalTo(centerXAnchor)
-                make.centerY.equalTo(snp.bottom).offset(-35)
+                make.centerY.equalTo(snp.bottom).offset(-30)
             }
         }
     }
@@ -72,7 +70,6 @@ final class CustomTabBarView: UIView {
         tabBarButton.contentVerticalAlignment = .fill
         tabBarButton.contentMode = .scaleAspectFit
         tabBarButton.translatesAutoresizingMaskIntoConstraints = false
-        tabBarButton.clipsToBounds = true
         bindButton(tabBarButton)
         return tabBarButton
     }

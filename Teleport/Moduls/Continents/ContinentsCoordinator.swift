@@ -11,9 +11,10 @@ import RxSwift
 final class ContinentsCoordinator {
     
     // MARK: - Private Properties
-
+    
     private let service = Service()
     private weak var navigationController: UINavigationController?
+    let bag = DisposeBag()
     
     // MARK: - Public Methods
     
@@ -32,7 +33,6 @@ final class ContinentsCoordinator {
     private func showCountries(id: String) {
         let vm = ContinentCountryViewModel(service: service, id: id)
         let vc = ContinentCountryViewController(viewModel: vm)
-        print("push")
         navigationController?.pushViewController(vc, animated: false)
     }
     
