@@ -13,7 +13,7 @@ final class UrbanAreasViewController: UIViewController {
     // MARK: Public Properies
 
     var bag = DisposeBag()
-  //  lazy var onItemTap = tableView.rx.modelSelected(UrbanAreasTableCellViewModel.self).map { $0 }
+    lazy var onItemTap = tableView.rx.modelSelected(UrbanAreasTableCellViewModel.self).map { $0 }
     
     // MARK: Private Properies
     
@@ -76,6 +76,19 @@ final class UrbanAreasViewController: UIViewController {
                 let cell = tableView.dequeueReusableCell(withModel: data, for: indexPath)
                 data.configureAny(cell)
                 return cell
+            }
+            .disposed(by: bag)
+        
+        onItemTap
+            .bind { [weak self] tap in
+                let valueToRemove = "https://api.teleport.org/api/urban_areas"
+                var value = tap.urbanResponse.href
+                value = (value.components(separatedBy: NSCharacterSet.decimalDigits) as NSArray).componentsJoined(by: "")
+                if let range = value.range(of: valueToRemove) {
+                    value.removeSubrange(range)
+                }
+                self?.viewModel.flow.accept(.onUrbanTap(href: value))
+                print("test1 \(value)")
             }
             .disposed(by: bag)
     }

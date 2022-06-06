@@ -14,6 +14,8 @@ protocol ServiceProtocol {
     func continentsCountries(id: String) -> Single<ContinentCountryRoot>
     func countriesSalaries(id: String) -> Single<SalaryRoot>
     func allUrbanAreas() -> Single<UrbanAreasRoot>
+    func urbanAreasHref(id: String) -> Single<UrbanAreasHrefResponse>
+    func score(id: String) -> Single<ScoresRoot>
 }
 
 final class Service: ServiceProtocol {
@@ -52,5 +54,15 @@ final class Service: ServiceProtocol {
     func allUrbanAreas() -> Single<UrbanAreasRoot> {
         provider.rx.request(.allUrbanAreas)
             .map(UrbanAreasRoot.self)
+    }
+    
+    func urbanAreasHref(id: String) -> Single<UrbanAreasHrefResponse> {
+        provider.rx.request(.urbanAreasHref(id))
+            .map(UrbanAreasHrefResponse.self)
+    }
+    
+    func score(id: String) -> Single<ScoresRoot> {
+        provider.rx.request(.score(id))
+            .map(ScoresRoot.self)
     }
 }
