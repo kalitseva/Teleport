@@ -8,7 +8,7 @@
 import RxCocoa
 import RxSwift
 import RxGesture
-import CoreServices
+import 
 
 final class PicturesCell: UITableViewCell {
 
@@ -23,20 +23,12 @@ final class PicturesCell: UITableViewCell {
         imageView.clipsToBounds = true
         return imageView
     }()
-    
-    private let photographerName: UILabel = {
-        let lbl = UILabel()
-        lbl.font = UIFont.systemFont(ofSize: 16)
-        lbl.textColor = UIColor.black.withAlphaComponent(0.8)
-        lbl.numberOfLines = 0
-        return lbl
-    }()
 
     // MARK: - Init
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-      //  setupLayout()
+        setupLayout()
         cellStyle()
     }
     
@@ -61,7 +53,15 @@ final class PicturesCell: UITableViewCell {
         selectionStyle = .none
     }
     
-    
+    private func setupLayout() {
+        addSubview(imageView)
+        
+        imageView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(20)
+            make.bottom.equalToSuperview()
+        }
+    }
 }
 
 
