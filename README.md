@@ -8,3 +8,5 @@ App:
 - SnapKit
 - MVVM + Coordinator
 - RxSwift / RxCocoa
+
+P.S. I'm working on this project, so I'm sorry for mistackes/comments.
