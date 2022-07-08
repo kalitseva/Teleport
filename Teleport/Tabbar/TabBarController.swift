@@ -14,6 +14,7 @@ final class TabBarController: UITabBarController {
 
     let bag = DisposeBag()
 
+
     // MARK: - Private properties
 
     private let customTabbarHeight: CGFloat = 55
